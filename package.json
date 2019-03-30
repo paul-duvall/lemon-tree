@@ -1,0 +1,13 @@
+{
+  "name": "lemon-tree-cafe",
+  "version": "1.0.0",
+  "description": "Web site for Lemon Tree Cafe",
+  "main": "index.html",
+  "scripts": {
+    "serve": "live-server"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "webpack": "^4.29.6"
+  }
+}
