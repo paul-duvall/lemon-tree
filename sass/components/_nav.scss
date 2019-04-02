@@ -1,0 +1,134 @@
+.c-nav {
+  background-color: $colour-primary;
+  position: relative;
+  font-size: 2rem;
+  height: 6.3rem;
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.3rem 0;
+    list-style: none;
+    width: 80%;
+    max-width: 100rem;
+  }
+
+  &__menu-item {
+    font-family: 'Special Elite', cursive;
+
+    a {
+      text-decoration: none;
+    }
+
+    a:link,
+    a:visited {
+      color: $colour-dark;
+    }
+  }
+
+  &__icon {
+    background-color: $colour-secondary;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    img {
+      height: 56px;
+      position: absolute;
+      left: 15px;
+      top: 6px;
+    }
+  }
+
+  &__burger {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
+
+  &__burger div {
+    width: 2.8rem;
+    height: .3rem;
+    background-color: $colour-light;
+    margin: .7rem;
+    border-radius: 2px;
+    transition: all .3s ease;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  // Ensures that the responsive menu is not visible when hidden
+  body {
+    overflow-x:hidden;
+  }
+
+  .c-nav {
+    &__list {
+      position: absolute;
+      right: 0;
+      top: 6.9vh;
+      height: 92vh;
+      background-color: $colour-primary;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in;
+
+      // --active class applied when burger is clicked
+      &--active {
+        transform: translateX(0%);
+      }
+    }
+
+    // Opacity set to 0 so items can fade in upon burger animation
+    &__menu-item {
+      opacity: 0;
+    }
+
+    // Setting burger to display block makes it visible
+    &__burger {
+      display: block;
+    }
+  }
+}
+
+// Animation for the menu items in responsive nav
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: transformX(5rem);
+  }
+  to {
+    opacity: 1;
+    transform: transformX(0rem);
+  }
+}
+
+// Animated the burger menu
+.toggle .c-nav__burger-line1 {
+  transform: rotate(-45deg) 
+             translate(-4px,8px);
+}
+
+.toggle .c-nav__burger-line2 {
+  opacity: 0;
+}
+
+.toggle .c-nav__burger-line3 {
+  transform: rotate(45deg)
+             translate(-6px,-10px);
+}

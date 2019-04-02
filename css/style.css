@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* Font-size set to 62.5% because that is the result of 10/16 (set to 10 pixels, meaning 1rem = 10px */
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  font-size: 1.6rem; }
+
+p {
+  padding: 1rem 0;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Special Elite', cursive; }
+
+.c-nav {
+  background-color: #cadf9e;
+  position: relative;
+  font-size: 2rem;
+  height: 6.3rem; }
+  .c-nav nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; }
+  .c-nav__list {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.3rem 0;
+    list-style: none;
+    width: 80%;
+    max-width: 100rem; }
+  .c-nav__menu-item {
+    font-family: 'Special Elite', cursive; }
+    .c-nav__menu-item a {
+      text-decoration: none; }
+    .c-nav__menu-item a:link,
+    .c-nav__menu-item a:visited {
+      color: #006274; }
+  .c-nav__icon {
+    background-color: #faec9b;
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .c-nav__icon img {
+      height: 56px;
+      position: absolute;
+      left: 15px;
+      top: 6px; }
+  .c-nav__burger {
+    display: none;
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .c-nav__burger div {
+    width: 2.8rem;
+    height: .3rem;
+    background-color: #F3F6EA;
+    margin: .7rem;
+    border-radius: 2px;
+    transition: all .3s ease; }
+
+@media screen and (max-width: 765px) {
+  body {
+    overflow-x: hidden; }
+  .c-nav__list {
+    position: absolute;
+    right: 0;
+    top: 6.9vh;
+    height: 92vh;
+    background-color: #cadf9e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in; }
+    .c-nav__list--active {
+      transform: translateX(0%); }
+  .c-nav__menu-item {
+    opacity: 0; }
+  .c-nav__burger {
+    display: block; } }
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: transformX(5rem); }
+  to {
+    opacity: 1;
+    transform: transformX(0rem); } }
+
+.toggle .c-nav__burger-line1 {
+  transform: rotate(-45deg) translate(-4px, 8px); }
+
+.toggle .c-nav__burger-line2 {
+  opacity: 0; }
+
+.toggle .c-nav__burger-line3 {
+  transform: rotate(45deg) translate(-6px, -10px); }

@@ -5,18 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Lemon Tree Cafe, Wymondham</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Special+Elite" rel="stylesheet">
 </head>
 <body>
   <div class="c-nav">
     <nav>
-      <ul>
-        <li><a href="#">Catering</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+      <ul class="c-nav__list">
+        <li class="c-nav__menu-item"><a href="#">Catering</a></li>
+        <li class="c-nav__menu-item c-nav__submenu"><a href="#">Menu</a>
+          <!-- <ul>
+            <li><a href="#">Mains</a></li>
+            <li><a href="#">Drinks</a></li>
+            <li><a href="#">Snacks</a></li>
+          </ul> -->
+        </li>
+        <li class="c-nav__menu-item"><a href="#">About</a></li>
+        <li class="c-nav__menu-item"><a href="#">Contact</a></li>
       </ul>
+      <div class="c-nav__burger">
+        <div class="c-nav__burger-line1"></div>
+        <div class="c-nav__burger-line2"></div>
+        <div class="c-nav__burger-line3"></div>
+      </div>
     </nav>
-    <div class="c-nav__icon">Icon here</div>
+    <div class="c-nav__icon">
+      <img src="./images/lemon.png" alt="The Lemon Tree Lemon">
+    </div>
   </div>
   
   <!-- (Or will the container class be on a div within the main header tag to be consistent with main below) -->
@@ -34,7 +49,7 @@
 
   <main>
     <section class="l-container">
-      <h2>Welcome to the Lemon Tree</h2>
+      <h1>Welcome to the Lemon Tree</h1>
       <p>Located in the heart of Wymondham within easy walking distance of the abbey and the train station, The Lemon Tree serves freshly-prepared, homemade food that is made using local-sourced produce where ever possible. We are always happy to consider out customers needs and pride ourselves on our inclusive menu that always contains vegan and dairy-free options. So please pop in and enjoy a bite to eat in our unique and cosy café!</p>
     </section>
     <section class="l-container"></section>
@@ -43,5 +58,7 @@
   <footer>
 
   </footer>
+
+  <script src="app.js"></script>
 </body>
 </html>
