@@ -21,6 +21,8 @@
 
   &__menu-item {
     font-family: 'Special Elite', cursive;
+    display: inline-block;
+    position: relative;
 
     a {
       text-decoration: none;
@@ -29,6 +31,21 @@
     a:link,
     a:visited {
       color: $colour-dark;
+    }
+
+    &::after {
+      content: "";
+      width: 0%;
+      background-color: $colour-dark;
+      height: 2.5px;
+      position: absolute; 
+      bottom: -.4rem;
+      left: 0;
+      transition: all .2s ease-in;
+    }
+
+    &:hover::after {
+      width: 100%;
     }
   }
 

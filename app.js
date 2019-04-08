@@ -19,8 +19,6 @@ const navSlide = () => {
     // Toggle burger animation
     burger.classList.toggle('toggle');
   });
-
-
 }
 
 navSlide();
