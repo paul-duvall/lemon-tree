@@ -6,15 +6,23 @@ p {
   padding: 1rem 0;
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
-  // line-height: 3.5rem;
+  color: $colour-darker;
+  line-height: 3rem;
   // letter-spacing: .15rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Special Elite', cursive;
+  text-align: center;
+  letter-spacing: .1rem;
+  line-height: 3.5rem;
+}
+
+h1 {
+  color: $colour-darker;
 }
 
 h3 {
   font-size: $font-regular-plus;
-  letter-spacing: .15rem;
+  
 }

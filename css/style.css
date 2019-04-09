@@ -12,20 +12,30 @@ html {
 body {
   box-sizing: border-box; }
 
+.l-container {
+  padding: 3rem; }
+
 body {
   font-size: 1.6rem; }
 
 p {
   padding: 1rem 0;
   font-size: 1.8rem;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  color: #2F4858;
+  line-height: 3rem; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Special Elite', cursive; }
+  font-family: 'Special Elite', cursive;
+  text-align: center;
+  letter-spacing: .1rem;
+  line-height: 3.5rem; }
+
+h1 {
+  color: #2F4858; }
 
 h3 {
-  font-size: 1.8rem;
-  letter-spacing: .15rem; }
+  font-size: 1.8rem; }
 
 .c-header__left {
   align-items: center;
@@ -60,6 +70,11 @@ h3 {
     height: 1px;
     margin: 0 auto;
     width: 55%; }
+
+.c-welcome {
+  background: #cadf9e; }
+  .c-welcome h1 {
+    padding: 0 3rem; }
 
 .c-nav {
   background-color: #cadf9e;
