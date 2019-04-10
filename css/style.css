@@ -18,7 +18,7 @@ body {
 body {
   font-size: 1.6rem; }
 
-p {
+p, li {
   padding: 1rem 0;
   font-size: 1.8rem;
   font-family: 'Open Sans', sans-serif;
@@ -37,6 +37,24 @@ h1 {
 h3 {
   font-size: 1.8rem; }
 
+.c-welcome {
+  background: #cadf9e; }
+
+.c-opening {
+  background: linear-gradient(rgba(202, 223, 158, 0.4), rgba(202, 223, 158, 0.4)), url(../../images/interior-2.jpg);
+  background-size: 200%;
+  color: white; }
+  .c-opening__times {
+    background: rgba(81, 81, 81, 0.45);
+    border-radius: 3px;
+    padding: 3rem 0; }
+  .c-opening ul {
+    list-style: none;
+    padding-top: 2rem; }
+  .c-opening li {
+    color: white;
+    text-align: center; }
+
 .c-header__left {
   align-items: center;
   background: #faec9b;
@@ -50,7 +68,6 @@ h3 {
   align-items: center;
   background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/cake-display.jpg);
   background-position: 10%, 10%;
-  background-size: 100%;
   display: flex;
   height: 25rem;
   justify-content: center; }
@@ -70,11 +87,6 @@ h3 {
     height: 1px;
     margin: 0 auto;
     width: 55%; }
-
-.c-welcome {
-  background: #cadf9e; }
-  .c-welcome h1 {
-    padding: 0 3rem; }
 
 .c-nav {
   background-color: #cadf9e;

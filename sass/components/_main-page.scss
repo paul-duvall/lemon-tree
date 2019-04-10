@@ -1,0 +1,30 @@
+.c-welcome {
+  background: $colour-primary;
+}
+
+.c-opening {
+  background: linear-gradient(
+    rgba($colour-primary, .4), 
+    rgba($colour-primary, .4)
+    ),
+    url(../../images/interior-2.jpg);
+    background-size: 200%;
+    color: white;
+
+    &__times {
+      background: rgba(#515151, .45);
+      border-radius: 3px;
+      padding: $size-larger 0;
+    }
+
+    ul {
+      list-style: none;
+      padding-top: $size-large;
+    }
+
+    li {
+      color: white;
+      text-align: center;
+    }
+}
+
