@@ -88,8 +88,8 @@
 
 @media screen and (max-width: 765px) {
   // Ensures that the responsive menu is not visible when hidden
-  body {
-    overflow-x:hidden;
+  nav {
+    overflow-x: hidden;
   }
 
   .c-nav {

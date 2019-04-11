@@ -208,7 +208,7 @@ a {
     transition: all .3s ease; }
 
 @media screen and (max-width: 765px) {
-  body {
+  nav {
     overflow-x: hidden; }
   .c-nav__list {
     position: absolute;
