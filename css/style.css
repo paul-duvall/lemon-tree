@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: .1rem;
   line-height: 3.5rem; }
 
-h1 {
+h1, h2 {
   color: #2F4858; }
 
 h3 {
@@ -48,12 +48,49 @@ h3 {
     background: rgba(81, 81, 81, 0.45);
     border-radius: 3px;
     padding: 3rem 0; }
+  .c-opening h2 {
+    color: white; }
   .c-opening ul {
     list-style: none;
     padding-top: 2rem; }
   .c-opening li {
     color: white;
     text-align: center; }
+
+.c-links {
+  background: #cadf9e; }
+  .c-links h2 {
+    padding-bottom: 2rem; }
+  .c-links__section {
+    background: white;
+    border: 3px solid #006274;
+    position: relative;
+    height: 30rem;
+    overflow: hidden; }
+    .c-links__section p {
+      padding: 3rem 5rem; }
+  .c-links__section:not(:last-child) {
+    border-bottom: 0px; }
+  .c-links__image1 {
+    width: 31rem; }
+  .c-links__image2 {
+    left: -150px;
+    position: absolute;
+    width: 53rem; }
+  .c-links__image3 {
+    left: -150px;
+    position: absolute;
+    width: 53rem; }
+  .c-links__speech-before {
+    position: absolute;
+    width: 3rem;
+    top: 1.5rem;
+    left: 1.5rem; }
+  .c-links__speech-after {
+    position: absolute;
+    width: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem; }
 
 .c-header__left {
   align-items: center;
