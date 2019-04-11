@@ -37,6 +37,23 @@ h1, h2 {
 h3 {
   font-size: 1.8rem; }
 
+a {
+  text-decoration: none; }
+  a:active, a:visited {
+    color: #2F4858; }
+
+.c-footer {
+  align-items: center;
+  background: #cadf9e;
+  color: #006274;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif; }
+  .c-footer__copyright {
+    margin: 1rem 0; }
+  .c-footer__designed-by {
+    margin-bottom: 1rem; }
+
 .c-welcome {
   background: #cadf9e; }
 
@@ -58,7 +75,7 @@ h3 {
     text-align: center; }
 
 .c-links {
-  background: #cadf9e; }
+  background: #F3F6EA; }
   .c-links h2 {
     padding-bottom: 2rem; }
   .c-links__section {
