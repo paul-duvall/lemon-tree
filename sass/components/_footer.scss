@@ -1,0 +1,16 @@
+.c-footer {
+  align-items: center;
+  background: $colour-primary;
+  color: $colour-dark;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+
+  &__copyright {
+    margin: $size-medium 0;
+  }
+
+  &__designed-by {
+    margin-bottom: $size-medium;
+  }
+}

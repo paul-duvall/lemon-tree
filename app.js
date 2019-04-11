@@ -21,4 +21,17 @@ const navSlide = () => {
   });
 }
 
-navSlide();
+const copyrightDate = () => {
+  const date = new Date();
+  const year = date.getFullYear();
+  const element = document.querySelector('.c-footer__date');
+  element.innerHTML = year;
+}
+
+const App = () => {
+  navSlide();
+  copyrightDate();
+}
+
+App();
+
