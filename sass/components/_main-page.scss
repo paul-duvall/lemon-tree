@@ -17,6 +17,10 @@
       padding: $size-larger 0;
     }
 
+    h2 {
+      color: white;
+    }
+
     ul {
       list-style: none;
       padding-top: $size-large;
@@ -26,5 +30,60 @@
       color: white;
       text-align: center;
     }
+}
+
+.c-links {
+  background: $colour-primary;
+
+  h2 {
+    padding-bottom: $size-large;
+  }
+
+  &__section {
+    background: white;
+    border: 3px solid $colour-dark;
+    
+    position: relative;
+    height: 30rem;
+    overflow: hidden;
+
+    p {
+      padding: $size-larger 5rem;
+    }
+  }
+
+  &__section:not(:last-child) {
+    border-bottom: 0px;
+  }
+
+  &__image1 {
+    width: 31rem;
+  }
+
+  &__image2 {
+    left: -150px;
+    position: absolute;
+    width: 53rem;    
+  }
+
+  &__image3 {
+    left: -150px;
+    position: absolute;
+    width: 53rem;
+  }
+
+  &__speech-before {
+    position: absolute;
+    width: 3rem;
+    top: 1.5rem;
+    left: 1.5rem;
+  }
+
+  &__speech-after {
+    position: absolute;
+    width: 3rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
+  }
 }
 
