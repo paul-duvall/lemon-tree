@@ -9,106 +9,109 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Special+Elite" rel="stylesheet">
 </head>
 <body>
-  <div class="c-nav">
-    <nav>
-      <ul class="c-nav__list">
-        <li class="c-nav__menu-item"><a href="#">Catering</a></li>
-        <li class="c-nav__menu-item c-nav__submenu"><a href="#">Menu</a>
-          <!-- <ul>
-            <li><a href="#">Mains</a></li>
-            <li><a href="#">Drinks</a></li>
-            <li><a href="#">Snacks</a></li>
-          </ul> -->
-        </li>
-        <li class="c-nav__menu-item"><a href="#">About</a></li>
-        <li class="c-nav__menu-item"><a href="#">Contact</a></li>
-      </ul>
-      <div class="c-nav__burger">
-        <div class="c-nav__burger-line1"></div>
-        <div class="c-nav__burger-line2"></div>
-        <div class="c-nav__burger-line3"></div>
+  <div class="l-wrapper">
+    <div class="c-nav">
+        <nav>
+          <ul class="c-nav__list">
+            <li class="c-nav__menu-item"><a href="#">Catering</a></li>
+            <li class="c-nav__menu-item c-nav__submenu"><a href="#">Menu</a>
+              <!-- <ul>
+                <li><a href="#">Mains</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">Snacks</a></li>
+              </ul> -->
+            </li>
+            <li class="c-nav__menu-item"><a href="#">About</a></li>
+            <li class="c-nav__menu-item"><a href="#">Contact</a></li>
+          </ul>
+          <div class="c-nav__burger">
+            <div class="c-nav__burger-line1"></div>
+            <div class="c-nav__burger-line2"></div>
+            <div class="c-nav__burger-line3"></div>
+          </div>
+        </nav>
+        <div class="c-nav__icon">
+          <img src="./images/lemon.png" alt="The Lemon Tree Lemon">
+        </div>
       </div>
-    </nav>
-    <div class="c-nav__icon">
-      <img src="./images/lemon.png" alt="The Lemon Tree Lemon">
-    </div>
+      
+      <!-- (Or will the container class be on a div within the main header tag to be consistent with main below) -->
+      <header>
+        <div class="c-header__left">
+          <img src="images/logo2.png" />
+        </div>
+        <div class="c-header__right">
+          <div class="c-header__text">
+            <h3>Lemon Tree Café Bar</h3>
+            <h3>Homemade food served in the</h3>
+            <h3>heart of Wymondham</h3>
+          </div>
+        </div>
+      </header>
+    
+      <main>
+        <!-- Welcome section -->
+        <section class="c-welcome">
+          <div class="l-container">
+              <h1>Welcome to the Lemon Tree</h1>
+              <p>Located in the heart of Wymondham within easy walking distance of the abbey and the train station, The Lemon Tree serves freshly-prepared, homemade food that is made using local-sourced produce where ever possible. We are always happy to consider out customers needs and pride ourselves on our inclusive menu that always contains vegan and dairy-free options. So please pop in and enjoy a bite to eat in our unique and cosy café!</p>
+          </div>
+        </section>
+    
+        <!-- Opening hours section -->
+        <section class="c-opening">
+          <div class="l-container">
+            <div class="c-opening__times">
+              <h2>Opening hours</h2>
+              <ul>
+                <li>Tuesday 9-3</li>
+                <li>Wednesday 9-3</li>
+                <li>Thursday 9-3</li>
+                <li>Friday 8-3</li>
+                <li>Saturday 8-3</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+    
+        <!-- Menu and catering links section -->
+        <section class="c-links">
+          <div class="l-container">
+              <h2>Recommendations</h2>
+            <div class="c-links__section">
+              <img src="/images/decorations.jpg" alt="Decorations in the cafe" class="c-links__image1">
+            </div>
+            <div class="c-links__section">
+              <img src="../images/speech-marks1.png" alt="Speech marks" class="c-links__speech-before">
+              <p>After a walk down town, a pleasant visit to the Lemon Tree café for breakfast is a must. The food here is cooked while you wait but its well worth it.</p>
+              <img src="../images/speech-marks2.png" alt="Speech marks" class="c-links__speech-after">
+            </div>
+            <div class="c-links__section">
+              <img src="/images/coffees.jpg" alt="Coffee being served" class="c-links__image2">
+            </div>
+            <div class="c-links__section">
+              <img src="../images/speech-marks1.png" alt="Speech marks" class="c-links__speech-before">
+              <p>I was delighted to find a small attractive café with staff willing to amend their lunches to suit special diets. What a welcoming atmosphere they've created.</p>
+              <img src="../images/speech-marks2.png" alt="Speech marks" class="c-links__speech-after">
+            </div>
+            <div class="c-links__section">
+              <img src="/images/brownie.jpg" alt="Tastie brownies!" class="c-links__image3">
+            </div>
+            <div class="c-links__section">
+              <img src="../images/speech-marks1.png" alt="Speech marks" class="c-links__speech-before">
+              <p>Went to Lemon Tree for lunch, had a really good home made soup and an good pot of tea. Staff were friendly and there is a cosy feel to the room. Very reasonably priced also.</p>
+              <img src="../images/speech-marks2.png" alt="Speech marks" class="c-links__speech-after">
+            </div>
+          </div>
+        </section>
+      </main>
+    
+      <footer class="c-footer">
+          <div class="c-footer__copyright">Copyright <span class="c-footer__date"></span> Lemon Tree</div>
+          <div class="c-footer__designed-by">Site by <a href="https://www.pjdwebdesign.com">PJD Web Design</a></div>
+      </footer>
   </div>
   
-  <!-- (Or will the container class be on a div within the main header tag to be consistent with main below) -->
-  <header>
-    <div class="c-header__left">
-      <img src="images/logo2.png" />
-    </div>
-    <div class="c-header__right">
-      <div class="c-header__text">
-        <h3>Lemon Tree Café Bar</h3>
-        <h3>Homemade food served in the</h3>
-        <h3>heart of Wymondham</h3>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Welcome section -->
-    <section class="c-welcome">
-      <div class="l-container">
-          <h1>Welcome to the Lemon Tree</h1>
-          <p>Located in the heart of Wymondham within easy walking distance of the abbey and the train station, The Lemon Tree serves freshly-prepared, homemade food that is made using local-sourced produce where ever possible. We are always happy to consider out customers needs and pride ourselves on our inclusive menu that always contains vegan and dairy-free options. So please pop in and enjoy a bite to eat in our unique and cosy café!</p>
-      </div>
-    </section>
-
-    <!-- Opening hours section -->
-    <section class="c-opening">
-      <div class="l-container">
-        <div class="c-opening__times">
-          <h2>Opening hours</h2>
-          <ul>
-            <li>Tuesday 9-3</li>
-            <li>Wednesday 9-3</li>
-            <li>Thursday 9-3</li>
-            <li>Friday 8-3</li>
-            <li>Saturday 8-3</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Menu and catering links section -->
-    <section class="c-links">
-      <div class="l-container">
-          <h2>Recommendations</h2>
-        <div class="c-links__section">
-          <img src="/images/decorations.jpg" alt="Decorations in the cafe" class="c-links__image1">
-        </div>
-        <div class="c-links__section">
-          <img src="../images/speech-marks1.png" alt="Speech marks" class="c-links__speech-before">
-          <p>After a walk down town, a pleasant visit to the Lemon Tree café for breakfast is a must. The food here is cooked while you wait but its well worth it.</p>
-          <img src="../images/speech-marks2.png" alt="Speech marks" class="c-links__speech-after">
-        </div>
-        <div class="c-links__section">
-          <img src="/images/coffees.jpg" alt="Coffee being served" class="c-links__image2">
-        </div>
-        <div class="c-links__section">
-          <img src="../images/speech-marks1.png" alt="Speech marks" class="c-links__speech-before">
-          <p>I was delighted to find a small attractive café with staff willing to amend their lunches to suit special diets. What a welcoming atmosphere they've created.</p>
-          <img src="../images/speech-marks2.png" alt="Speech marks" class="c-links__speech-after">
-        </div>
-        <div class="c-links__section">
-          <img src="/images/brownie.jpg" alt="Tastie brownies!" class="c-links__image3">
-        </div>
-        <div class="c-links__section">
-          <img src="../images/speech-marks1.png" alt="Speech marks" class="c-links__speech-before">
-          <p>Went to Lemon Tree for lunch, had a really good home made soup and an good pot of tea. Staff were friendly and there is a cosy feel to the room. Very reasonably priced also.</p>
-          <img src="../images/speech-marks2.png" alt="Speech marks" class="c-links__speech-after">
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="c-footer">
-      <div class="c-footer__copyright">Copyright <span class="c-footer__date"></span> Lemon Tree</div>
-      <div class="c-footer__designed-by">Site by <a href="https://www.pjdwebdesign.com">PJD Web Design</a></div>
-  </footer>
 
   <script src="app.js"></script>
 </body>

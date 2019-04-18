@@ -1,14 +1,21 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
 // Section 1 (contains main logo)
 .c-header__left {
   align-items: center;
   background: $colour-secondary;
   display: flex;
-  height: 25rem;
+  min-height: 25rem;
   justify-content: center;
   
   // Main logo
   img {
     width: 70%;
+    max-width: 40rem;
+    margin: 3.5rem 0;
   }
 }
 
@@ -23,7 +30,7 @@
   background-position: 10%, 10%;
   // background-size: 100%;
   display: flex;
-  height: 25rem;
+  min-height: 25rem;
   justify-content: center;
 }
 
@@ -46,5 +53,50 @@
     height: 1px;
     margin: 0 auto;
     width: 55%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .l-wrapper {
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .c-header__left {
+    width: 50%;
+    height: 40rem;
+  }
+
+  .c-header__right {
+    width: 50%;
+    height: 40rem;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .c-header__text {
+    height: 23rem;
+    background: rgba(#515151, .45);
+    width: 100%;
+    justify-content: center;
+
+    h3 {
+      text-align: left;
+      margin-left: 5rem;
+    }
+
+    &::before, &::after {
+      margin: 0;
+      margin-left: 5rem;
+      width: 20%;
+    }
+
+    &::after {
+      margin-top: .7rem;
+    }
   }
 }

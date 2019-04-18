@@ -89,7 +89,7 @@
 @media screen and (max-width: 765px) {
   // Ensures that the responsive menu is not visible when hidden
   nav {
-    overflow-x: hidden;
+    // overflow-x: hidden;
   }
 
   .c-nav {
@@ -148,4 +148,8 @@
 .toggle .c-nav__burger-line3 {
   transform: rotate(45deg)
              translate(-6px,-10px);
+}
+
+@media only screen and (min-width: 800px) {
+
 }
