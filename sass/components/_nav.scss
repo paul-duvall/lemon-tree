@@ -13,7 +13,7 @@
   &__list {
     display: flex;
     justify-content: space-around;
-    padding: 2.3rem 0;
+    padding: .7rem 0;
     list-style: none;
     width: 80%;
     max-width: 100rem;
@@ -151,5 +151,11 @@
 }
 
 @media only screen and (min-width: 800px) {
-
+  .c-nav {
+    &__menu-item {
+      &::after {
+        bottom: 1rem;
+      }
+    }
+  }
 }
