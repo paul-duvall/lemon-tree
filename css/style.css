@@ -14,7 +14,17 @@ body {
   background-color: #F3F6EA; }
 
 .l-container {
-  padding: 3rem; }
+  padding: 3rem;
+  margin: 0 auto; }
+
+@media only screen and (min-width: 600px) {
+  .l-container {
+    max-width: 85%; } }
+
+@media only screen and (min-width: 800px) {
+  .l-container {
+    width: 75%;
+    max-width: 80rem; } }
 
 body {
   font-size: 1.6rem; }
@@ -57,10 +67,15 @@ a {
 
 .c-welcome {
   background: #cadf9e; }
+  .c-welcome h1 {
+    margin-top: 3rem; }
+  .c-welcome p {
+    margin: 3rem 0; }
 
 .c-opening {
   background: linear-gradient(rgba(202, 223, 158, 0.4), rgba(202, 223, 158, 0.4)), url(../../images/interior-2.jpg);
   background-size: 200%;
+  background-position: center bottom;
   color: white; }
   .c-opening__times {
     background: rgba(81, 81, 81, 0.45);

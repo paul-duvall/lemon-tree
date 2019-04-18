@@ -1,3 +1,17 @@
 .l-container {
   padding: 3rem;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .l-container {
+    max-width: 85%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .l-container {
+    width: 75%;
+    max-width: 80rem;
+  }
 }
