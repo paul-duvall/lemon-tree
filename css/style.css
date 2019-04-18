@@ -10,7 +10,8 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background-color: #F3F6EA; }
 
 .l-container {
   padding: 3rem; }
@@ -109,21 +110,27 @@ a {
     bottom: 1.5rem;
     right: 1.5rem; }
 
+header {
+  display: flex;
+  flex-direction: column; }
+
 .c-header__left {
   align-items: center;
   background: #faec9b;
   display: flex;
-  height: 25rem;
+  min-height: 25rem;
   justify-content: center; }
   .c-header__left img {
-    width: 70%; }
+    width: 70%;
+    max-width: 40rem;
+    margin: 3.5rem 0; }
 
 .c-header__right {
   align-items: center;
   background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/cake-display.jpg);
   background-position: 10%, 10%;
   display: flex;
-  height: 25rem;
+  min-height: 25rem;
   justify-content: center; }
 
 .c-header__text {
@@ -141,6 +148,35 @@ a {
     height: 1px;
     margin: 0 auto;
     width: 55%; }
+
+@media only screen and (min-width: 800px) {
+  .l-wrapper {
+    margin: 0 auto;
+    max-width: 120rem; }
+  header {
+    flex-direction: row; }
+  .c-header__left {
+    width: 50%;
+    height: 40rem; }
+  .c-header__right {
+    width: 50%;
+    height: 40rem;
+    display: flex;
+    align-items: flex-end; }
+  .c-header__text {
+    height: 23rem;
+    background: rgba(81, 81, 81, 0.45);
+    width: 100%;
+    justify-content: center; }
+    .c-header__text h3 {
+      text-align: left;
+      margin-left: 5rem; }
+    .c-header__text::before, .c-header__text::after {
+      margin: 0;
+      margin-left: 5rem;
+      width: 20%; }
+    .c-header__text::after {
+      margin-top: .7rem; } }
 
 .c-nav {
   background-color: #cadf9e;
@@ -208,8 +244,6 @@ a {
     transition: all .3s ease; }
 
 @media screen and (max-width: 765px) {
-  nav {
-    overflow-x: hidden; }
   .c-nav__list {
     position: absolute;
     right: 0;
