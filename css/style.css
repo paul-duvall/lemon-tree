@@ -191,7 +191,7 @@ header {
   .c-nav__list {
     display: flex;
     justify-content: space-around;
-    padding: 2.3rem 0;
+    padding: .7rem 0;
     list-style: none;
     width: 80%;
     max-width: 100rem; }
@@ -278,3 +278,7 @@ header {
 
 .toggle .c-nav__burger-line3 {
   transform: rotate(45deg) translate(-6px, -10px); }
+
+@media only screen and (min-width: 800px) {
+  .c-nav__menu-item::after {
+    bottom: 1rem; } }
