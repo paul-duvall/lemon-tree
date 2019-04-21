@@ -77,7 +77,6 @@ a {
 
 .c-opening {
   background: linear-gradient(rgba(202, 223, 158, 0.4), rgba(202, 223, 158, 0.4)), url(../../images/interior-2.jpg);
-  background-size: 200%;
   background-position: center bottom;
   color: white; }
   .c-opening__times {
