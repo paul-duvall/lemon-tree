@@ -61,12 +61,10 @@
     }
   }
 
-  // &__section:not(:last-child) {
-  //   border-bottom: 0px;
-  // }
-
   &__image1 {
-    width: 31rem;
+    width: 35rem;
+    position: absolute;
+    top: -5rem;
   }
 
   &__image2 {
