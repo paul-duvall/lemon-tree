@@ -107,7 +107,9 @@ a {
     .c-recommendations__section p {
       padding: 3rem 5rem; }
   .c-recommendations__image1 {
-    width: 31rem; }
+    width: 35rem;
+    position: absolute;
+    top: -5rem; }
   .c-recommendations__image2 {
     left: -150px;
     position: absolute;
