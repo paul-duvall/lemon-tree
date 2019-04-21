@@ -83,7 +83,8 @@ a {
   .c-opening__times {
     background: rgba(81, 81, 81, 0.45);
     border-radius: 3px;
-    padding: 3rem 0; }
+    padding: 3rem 0;
+    min-width: 80%; }
   .c-opening h2 {
     color: white; }
   .c-opening ul {
