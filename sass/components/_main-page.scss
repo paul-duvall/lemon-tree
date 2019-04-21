@@ -41,7 +41,7 @@
     }
 }
 
-.c-links {
+.c-recommendations {
   background: $colour-light;
 
   h2 {
@@ -51,7 +51,7 @@
   &__section {
     background: white;
     border: 3px solid $colour-dark;
-    
+    width: 35rem;
     position: relative;
     height: 30rem;
     overflow: hidden;
@@ -61,9 +61,9 @@
     }
   }
 
-  &__section:not(:last-child) {
-    border-bottom: 0px;
-  }
+  // &__section:not(:last-child) {
+  //   border-bottom: 0px;
+  // }
 
   &__image1 {
     width: 31rem;
@@ -96,3 +96,141 @@
   }
 }
 
+// For layout of recommendations section
+
+.c-recommendations {
+  &__main {
+    display: grid;
+    grid-template-columns: 5rem auto 5rem;
+    grid-template-rows: repeat(6, auto);
+    max-width: 115rem;
+  }
+
+  &__section1 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    border-bottom: none;
+  }
+
+  &__section2 {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    border-bottom: none;
+  }
+
+  &__section3 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+    border-bottom: none;
+  }
+
+  &__section4 {
+    grid-row-start: 4;
+    grid-column-start: 2;
+    border-bottom: none;
+  }
+
+  &__section5 {
+    grid-row-start: 5;
+    grid-column-start: 2;
+    border-bottom: none;
+  }
+
+  &__section6 {
+    grid-row-start: 6;
+    grid-column-start: 2;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .c-recommendations {
+    &__main {
+      grid-template-columns: 5rem auto auto 5rem;
+      grid-template-rows: repeat(3, auto);
+    }
+  
+    &__section1 {
+      grid-row-start: 1;
+      grid-column-start: 2;
+      justify-self: end;
+      border-right: none;
+    }
+  
+    &__section2 {
+      grid-row-start: 1;
+      grid-column-start: 3;
+      justify-self: start;
+    }
+  
+    &__section3 {
+      grid-row-start: 2;
+      grid-column-start: 3;
+      justify-self: start;
+    }
+  
+    &__section4 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      justify-self: end;
+      border-right: none;
+    }
+  
+    &__section5 {
+      grid-row-start: 3;
+      grid-column-start: 2;
+      justify-self: end;
+      border-bottom: 3px solid $colour-dark;
+      border-right: none;
+    }
+  
+    &__section6 {
+      grid-row-start: 3;
+      grid-column-start: 3;
+      justify-self: start;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .c-recommendations {
+    &__main {
+      grid-template-columns: 5rem repeat(3, auto) 5rem;
+      grid-template-rows: auto auto;
+    }
+
+    &__section1 {
+      grid-row-start: 1;
+      grid-column-start: 2;
+    }
+
+    &__section2 {
+      grid-row-start: 1;
+      grid-column-start: 3;
+    }
+
+    &__section3 {
+      grid-row-start: 1;
+      grid-column-start: 4;
+      border-left: none;
+    }
+
+    &__section4 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      border-bottom: 3px solid $colour-dark;
+    }
+
+    &__section5 {
+      grid-row-start: 2;
+      grid-column-start: 3;
+      border-bottom: 3px solid $colour-dark;
+      border-right: 3px solid $colour-dark;
+    }
+
+    &__section6 {
+      grid-row-start: 2;
+      grid-column-start: 4;
+      border-left: none;
+    }
+  }
+}
