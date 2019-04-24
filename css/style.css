@@ -325,6 +325,23 @@ header {
     padding-top: 2rem;
     margin-left: 3rem; }
 
+.c-menu__menu-section {
+  padding-top: 3rem; }
+
+.c-menu__item-name {
+  font-family: 'Special Elite', cursive;
+  font-size: 2rem; }
+
+.c-menu__item {
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #2F4858; }
+  .c-menu__item p {
+    font-size: 1.6rem;
+    line-height: 2rem; }
+
 .c-nav {
   background-color: #cadf9e;
   position: relative;

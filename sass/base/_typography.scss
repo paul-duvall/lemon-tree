@@ -4,10 +4,10 @@ body {
 
 p, li {
   padding: 1rem 0;
-  font-size: 1.8rem;
+  font-size: $font-regular-plus;
   font-family: 'Open Sans', sans-serif;
   color: $colour-darker;
-  line-height: 3rem;
+  line-height: $size-larger;
   // letter-spacing: .15rem;
 }
 

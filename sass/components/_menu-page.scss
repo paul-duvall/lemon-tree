@@ -1,0 +1,64 @@
+.c-menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+
+  button {
+    width: 16rem;
+    margin: 1rem;
+    padding: .7rem 0;
+    padding-top: 1rem;
+    background: none;
+    border: 2px solid $colour-darker;
+    font-family: 'Special Elite', cursive;
+    color: $colour-darker;
+  }
+}
+
+.c-menu {
+  &__title {
+    background: linear-gradient(
+      rgba($colour-primary, .1),
+      rgba($colour-primary, .4)
+      ),
+      url(../../images/breaky.jpg);
+    background-position: center;
+    background-size: 55rem;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
+    height: 24rem;
+    
+    h2, h3 {
+      color: white;
+      text-shadow: $text-shadow; 
+      text-align: left;
+      padding-top: 2rem;
+      margin-left: 3rem;
+    }
+  }
+
+  &__menu-section {
+    padding-top: $size-larger;
+  }
+
+  &__item-name {
+    font-family: 'Special Elite', cursive;
+    font-size: $font-title-regular;
+  }
+
+  &__item {
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: $size-larger;
+    color: $colour-darker;
+    
+    p {
+      font-size: $font-regular;
+      line-height: $size-large;
+    }
+    
+  }
+}
