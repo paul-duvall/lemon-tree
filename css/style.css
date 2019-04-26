@@ -309,7 +309,11 @@ header {
     background: none;
     border: 2px solid #2F4858;
     font-family: 'Special Elite', cursive;
-    color: #2F4858; }
+    color: #2F4858;
+    cursor: pointer; }
+  .c-menu__links button.active {
+    background-color: #2F4858;
+    color: white; }
 
 .c-menu__title {
   background: linear-gradient(rgba(202, 223, 158, 0.1), rgba(202, 223, 158, 0.4)), url(../../images/breaky.jpg);
@@ -345,6 +349,20 @@ header {
 .c-menu__item-extra {
   margin-top: -4rem;
   font-weight: bold; }
+
+.tabcontent {
+  display: none; }
+
+.tabcontent {
+  animation: fadeEffect 2.5s;
+  /* Fading effect takes 1 second */ }
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .c-nav {
   background-color: #cadf9e;

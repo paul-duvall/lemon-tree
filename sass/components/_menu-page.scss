@@ -14,6 +14,12 @@
     border: 2px solid $colour-darker;
     font-family: 'Special Elite', cursive;
     color: $colour-darker;
+    cursor: pointer;
+  }
+
+  button.active {
+    background-color: $colour-darker;
+    color: white;
   }
 }
 
@@ -67,4 +73,18 @@
     font-weight: bold;
 
   }
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 2.5s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
