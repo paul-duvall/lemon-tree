@@ -31,7 +31,9 @@ breakfastItems.forEach((menuItem) => {
 `;
 if(menuItem.extra) {
   breakfast.innerHTML += `
-    <p class="c-menu__item-extra">${menuItem.extra}</p>
+  <div class="c-menu__item c-menu__item-extra">
+    <p>${menuItem.extra}</p>
+  </div>
   `;
 }
 });

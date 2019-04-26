@@ -342,6 +342,10 @@ header {
     font-size: 1.6rem;
     line-height: 2rem; }
 
+.c-menu__item-extra {
+  margin-top: -4rem;
+  font-weight: bold; }
+
 .c-nav {
   background-color: #cadf9e;
   position: relative;
