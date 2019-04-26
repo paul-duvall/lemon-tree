@@ -12,6 +12,54 @@ const breakfastItems = [
     extra: ''    
   },
   {
+    name: 'Mushrooms On Toast (V)',
+    price: '5.50',
+    description: 'Sauteed button mushrooms on toast, drizzled with olive oil and garnished with dressed rocket leaves.',
+    extra: ''    
+  },
+  {
+    name: 'Eggs Anyhow (V)',
+    price: '2 free range eggs fried, poached or scrambled and served on toast. Top with two extra bits of bacon or sausages for <strong>£2.00</strong>',
+    description: '',
+    extra: ''    
+  },
+  {
+    name: 'The Vegetarian LemonTree (V)',
+    price: '8.20',
+    description: 'Vegetarian sausage, poached egg, 2 hash browns, sauteed mushrooms, tomato, ramekin of beans and toast.',
+    extra: ''    
+  },
+  {
+    name: 'Eggs Benedict OR Florentine',
+    price: '7.00',
+    description: 'English muffin topped with our home cooked gammon, poached eggs and hollindaise sauce, with dressed leaves.<br>Florentine - swap the gammon for wilted spinach.',
+    extra: ''    
+  },
+  {
+    name: 'Bacon OR Sausage Sandwich',
+    price: '4.50',
+    description: '',
+    extra: 'Add an egg for 90p!'    
+  },
+  {
+    name: 'The Healthy LemonTree (GF)',
+    price: '7.30',
+    description: '2 rashers of sliced bacon on a bed of dressed baby spinach, rocket, goats cheese, topped with a poached egg.',
+    extra: ''    
+  },
+  {
+    name: 'Cowboy Beans',
+    price: '7.00',
+    description: 'Homemade beans with bacon and chorizo served on a slice of homemade sourdough toast and a side of dressed rocket leaves.',
+    extra: ''    
+  },
+  {
+    name: 'VeggieBoy Beans',
+    price: '6.40',
+    description: 'Cowboy beans but without the meaty bits.',
+    extra: ''    
+  },
+  {
     name: '',
     price: '',
     description: '',
@@ -39,32 +87,68 @@ const mainsItems = [
     extra: ''    
   },
   {
-    name: '',
-    price: '',
-    description: '',
+    name: 'The LemonTree Mensieur',
+    price: '7.75',
+    description: '2 slices of toasted homemade sourdough with home baked gammon, swiss cheese and wholegrain mustard mayonnaise, served with a dressed salad and homemade coleslaw.',
+    extra: ''    
+  },
+  {
+    name: 'Classic burger',
+    price: '9.95',
+    description: 'A 180g homemade beef patty with a base of sweet mustard, chopped gherkins and peppers, topped with mature Cheddar cheese, baby gem lettuce, red onion and tomato. Served in a homemade brioche bun with chips and coleslaw.',
+    extra: 'Add Bacon for £1.00!'    
+  },
+  {
+    name: 'Gammon, Egg and Chips (GF)',
+    price: '8.50',
+    description: 'Home baked gammon, 2 poached free-range eggs and chips.',
+    extra: ''    
+  },
+  {
+    name: 'Jacket Potato (GF)',
+    price: '6.80',
+    description: 'Choose from: Tuna, chicken mayonnaise, homemade chilli, homemade or heinz beans, cheese (cheddar, goats cheese, swiss or brie), prawns in marie rose sauce. Served with dressed salad and homemade coleslaw. (Please note we do not put butter on our potatoes unless requested.)',
+    extra: 'Add an extra topping for £1.00'    
+  },
+  {
+    name: 'Chicken Fajita',
+    price: '6.85',
+    description: 'Chicken cooked in a medium spiced fajita mix with peppers, onion and garlic, served in a 12" wrap with a side salad and homemade coleslaw, topped with sour cream.',
+    extra: ''    
+  },
+  {
+    name: 'Chilli Nachos',
+    price: '6.85',
+    description: 'Nacho tortilla chips covered with our homemade chilli and topped with cheese and sour cream.',
     extra: ''    
   },
 ];
+
+function addExtras(section){
+  section.innerHTML += `<p>Extras</p>`;
+}
 
 let breakfast = document.querySelector('.c-menu__menu-section-breakfast');
 let mains = document.querySelector('.c-menu__menu-section-mains')
 
 breakfastItems.forEach((menuItem) => {
   breakfast.innerHTML += `
-  <div class="c-menu__item">
-    <div class="c-menu__item-name">${menuItem.name}</div>
-    <p class="c-menu__item-price">${menuItem.price}</p>
-    <p class="c-menu__item-desc">${menuItem.description}</p>
-  </div>
-`;
-if(menuItem.extra) {
-  breakfast.innerHTML += `
-  <div class="c-menu__item c-menu__item-extra">
-    <p>${menuItem.extra}</p>
-  </div>
+    <div class="c-menu__item">
+      <div class="c-menu__item-name">${menuItem.name}</div>
+      <p class="c-menu__item-price">${menuItem.price}</p>
+      <p class="c-menu__item-desc">${menuItem.description}</p>
+    </div>
   `;
-}
+  
+  if(menuItem.extra) {
+    breakfast.innerHTML += `
+    <div class="c-menu__item c-menu__item-extra">
+      <p>${menuItem.extra}</p>
+    </div>
+    `;
+  }
 });
+addExtras(breakfast);
 
 mainsItems.forEach((menuItem) => {
   mains.innerHTML += `
