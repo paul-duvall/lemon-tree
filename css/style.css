@@ -330,7 +330,8 @@ header {
     margin-left: 3rem; }
 
 .c-menu__menu-section {
-  padding-top: 3rem; }
+  padding-top: 3rem;
+  text-align: center; }
 
 .c-menu__item-name {
   font-family: 'Special Elite', cursive;
@@ -349,6 +350,17 @@ header {
 .c-menu__item-extra {
   margin-top: -4rem;
   font-weight: bold; }
+
+.c-menu__sandwiches-titles {
+  display: none; }
+
+.c-menu__sandwiches-prices {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  color: #2F4858; }
 
 .tabcontent {
   display: none; }

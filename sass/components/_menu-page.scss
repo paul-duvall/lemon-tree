@@ -47,6 +47,7 @@
 
   &__menu-section {
     padding-top: $size-larger;
+    text-align: center;
   }
 
   &__item-name {
@@ -72,6 +73,21 @@
     margin-top: -4rem;
     font-weight: bold;
 
+  }
+}
+
+.c-menu__sandwiches {
+  &-titles {
+    display: none; 
+  }
+
+  &-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: $size-medium;
+    font-family: 'Open Sans', sans-serif;
+    color: $colour-darker;
   }
 }
 

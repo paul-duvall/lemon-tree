@@ -124,19 +124,136 @@ const mainsItems = [
   },
 ];
 
+const nibblesItems = [
+  {
+    name: 'Piece of Cake',
+    price: '2.60'
+  },
+  {
+    name: 'Scones',
+    price: '2.20'
+  },
+  {
+    name: 'Sausage Rolls',
+    price: '2.40'
+  },
+  {
+    name: 'Hot Chilli Sausage Rolls',
+    price: '2.40'
+  },
+  {
+    name: 'Round of toast',
+    price: '1.25'
+  },
+  {
+    name: 'Large Toasted Teacake',
+    price: '2.20'
+  },
+  {
+    name: 'Bowl of chips',
+    price: '2.40'
+  },
+  {
+    name: 'Bowl of Cheesy Chips',
+    price: '2.80'
+  },
+  {
+    name: 'Warm Garlic Ciabatta',
+    price: '2.80'
+  },
+  {
+    name: '',
+    price: ''
+  }
+];
+
+const sandwichItems = [
+  {
+    name: 'Gammon OR Cheese',
+    sPrice: '4.70',
+    wPrice: '4.95',
+    cPrice: '5.20'
+  },
+  {
+    name: 'Bacon & Brie',
+    sPrice: '5.40',
+    wPrice: '5.80',
+    cPrice: '6.10'
+  },
+  {
+    name: 'Brie & Cranberry (V)',
+    sPrice: '5.20',
+    wPrice: '5.50',
+    cPrice: '6.00'
+  },
+  {
+    name: 'Goats Cheese, Redcurrant Jelly & Baby Spinach',
+    sPrice: '5.50',
+    wPrice: '5.95',
+    cPrice: '6.30'
+  },
+  {
+    name: 'Bacon, Chicken & Chorizo',
+    sPrice: '5.75',
+    wPrice: '6.00',
+    cPrice: '6.50'
+  },
+  {
+    name: 'Prawns in Marie Rose Sause',
+    sPrice: '6.20',
+    wPrice: '6.50',
+    cPrice: '6.80'
+  },
+  {
+    name: 'Tuna Mayo & Cucumber',
+    sPrice: '5.20',
+    wPrice: '5.70',
+    cPrice: '6.20'
+  },
+  {
+    name: 'Warmed Grilled Chicken Mayo & Baby Gem Lettuce',
+    sPrice: '5.50',
+    wPrice: '6.00',
+    cPrice: '6.30'
+  },
+  {
+    name: 'BLT',
+    sPrice: '5.50',
+    wPrice: '6.00',
+    cPrice: '6.30'
+  },
+  {
+    name: 'Bacon, Chicken & Avocado',
+    sPrice: '5.95',
+    wPrice: '6.25',
+    cPrice: '6.50'
+  },
+  {
+    name: '',
+    sPrice: '',
+    wPrice: '',
+    cPrice: ''
+  },
+];
+
 function addExtras(section){
   section.innerHTML += `<p>Extras</p>`;
 }
 
+// Query selectors
+
 let breakfast = document.querySelector('.c-menu__menu-section-breakfast');
-let mains = document.querySelector('.c-menu__menu-section-mains')
+let mains = document.querySelector('.c-menu__menu-section-mains');
+let sandwiches = document.querySelector('.c-menu__menu-section-sandwiches');
+
+// Generate breakfasts
 
 breakfastItems.forEach((menuItem) => {
   breakfast.innerHTML += `
     <div class="c-menu__item">
       <div class="c-menu__item-name">${menuItem.name}</div>
       <p class="c-menu__item-price">${menuItem.price}</p>
-      <p class="c-menu__item-desc">${menuItem.description}</p>
+      <p>${menuItem.description}</p>
     </div>
   `;
   
@@ -150,12 +267,14 @@ breakfastItems.forEach((menuItem) => {
 });
 addExtras(breakfast);
 
+// Generate main meals
+
 mainsItems.forEach((menuItem) => {
   mains.innerHTML += `
   <div class="c-menu__item">
     <div class="c-menu__item-name">${menuItem.name}</div>
     <p class="c-menu__item-price">${menuItem.price}</p>
-    <p class="c-menu__item-desc">${menuItem.description}</p>
+    <p>${menuItem.description}</p>
   </div>
 `;
 if(menuItem.extra) {
@@ -165,6 +284,23 @@ if(menuItem.extra) {
   </div>
   `;
 }
+});
+
+// Generate sandwiches
+
+sandwichItems.forEach((menuItem) => {
+  sandwiches.innerHTML += `
+    <div class="c-menu__item">
+      <div class="c-menu__item-name c-menu__sandwiches-name">
+        ${menuItem.name}
+      </div>
+      <div class="c-menu__sandwiches-prices">
+        <div>${menuItem.sPrice}</div>
+        <div>${menuItem.wPrice}</div>
+        <div>${menuItem.cPrice}</div>
+      </div>
+    </div>
+  `;
 });
 
 // **************************** Menu tabs ****************************
