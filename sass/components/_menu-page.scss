@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   padding-bottom: 1.5rem;
+  padding-top: 1rem;
 
   button {
     background: none;
@@ -55,6 +56,7 @@
 
   &__section-main {
     max-width: 100rem;
+    width: 90vw;
     border: 3px solid $colour-darker;
     margin-bottom: $size-larger;
     background-color: lighten($colour-secondary, 10%);
@@ -74,7 +76,9 @@
     color: $colour-darker;
     margin: 0 auto;
     margin-bottom: $size-larger;
-    width: 40rem;
+    max-width: 40rem;
+    min-width: 25rem;
+    padding: $size-medium;
     text-align: center;
     
     p {
@@ -183,6 +187,10 @@
      display: flex;
      flex-wrap: wrap;
     }
+
+    &__item {
+      width: 40rem;
+    }
   }
 }
 
@@ -196,6 +204,8 @@
     &__section-main {
       min-width: 100rem;
     }
+
+    
   }
 
   .l-drinks-container {    
