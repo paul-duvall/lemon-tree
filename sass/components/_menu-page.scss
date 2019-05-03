@@ -1,20 +1,23 @@
 .c-menu__links {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
 
   button {
-    width: 16rem;
-    margin: 1rem;
-    padding: .7rem 0;
-    padding-top: 1rem;
     background: none;
     border: 2px solid $colour-darker;
-    font-family: 'Special Elite', cursive;
     color: $colour-darker;
     cursor: pointer;
+    font-family: 'Special Elite', cursive;
+    margin: 1rem;
+    padding: 1rem 0 .7rem 0;
+    width: 16rem;
+  }
+
+  button:hover{
+    // background: lighten($colour-darker, 90%);
+    background: $colour-secondary;
   }
 
   button.active {
@@ -128,7 +131,6 @@
     font-size: $font-regular-plus;
     font-family: 'Open Sans', sans-serif;
   }
-  
 }
 
 // For lists of different drink options
@@ -151,7 +153,6 @@
 }
 
 // ********** Menu tabs animation **********
-
 .tabcontent {
   display: none;
 }
