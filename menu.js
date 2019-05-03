@@ -236,14 +236,16 @@ const sandwichItems = [
   },
 ];
 
-function addExtras(section){
-  section.innerHTML += `<p>Extras</p>`;
-}
-
 // Query selectors
 const breakfast = document.querySelector('.c-menu__menu-section-breakfast');
 const mains = document.querySelector('.c-menu__menu-section-mains');
 const sandwiches = document.querySelector('.c-menu__menu-section-sandwiches');
+const nibbles = document.querySelector('.c-menu__menu-section-nibbles');
+
+function addExtras(section){
+  section.innerHTML += `<p>Extras</p>`;
+}
+
 
 // Generate breakfasts
 function generateBreakfasts() {
@@ -267,6 +269,7 @@ function generateBreakfasts() {
   addExtras(breakfast);
 }
 
+
 // Generate main meals
 function generateMains() {
   mainsItems.forEach((menuItem) => {
@@ -287,6 +290,7 @@ function generateMains() {
   });
 }
 
+
 // Generate sandwiches
 function generateSandwiches() {
   sandwichItems.forEach((menuItem) => {
@@ -305,8 +309,23 @@ function generateSandwiches() {
   });
 }
 
-// **************************** Menu tabs ****************************
 
+// Generate nibbles
+function generateNibbles() {
+  nibblesItems.forEach((menuItem) => {
+    nibbles.innerHTML += `
+      <div class="c-menu__item">
+        <div class="c-menu__item-name">
+          ${menuItem.name}
+        </div>
+        <div>${menuItem.price}</div>
+      </div>
+    `;
+  });
+}
+
+
+// **************************** Menu tabs ****************************
 
 // On the menu page, displays the lunch menu as a default
 document.getElementById('Breakfast').style.display = "block";
@@ -337,7 +356,7 @@ function generateMenu() {
   generateBreakfasts();
   generateMains();
   generateSandwiches();
-
+  generateNibbles();
 }
 
 generateMenu();
