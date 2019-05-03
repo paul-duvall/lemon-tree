@@ -236,75 +236,96 @@ const sandwichItems = [
   },
 ];
 
+// Query selectors
+const breakfast = document.querySelector('.c-menu__menu-section-breakfast');
+const mains = document.querySelector('.c-menu__menu-section-mains');
+const sandwiches = document.querySelector('.c-menu__menu-section-sandwiches');
+const nibbles = document.querySelector('.c-menu__menu-section-nibbles');
+
 function addExtras(section){
   section.innerHTML += `<p>Extras</p>`;
 }
 
-// Query selectors
-
-let breakfast = document.querySelector('.c-menu__menu-section-breakfast');
-let mains = document.querySelector('.c-menu__menu-section-mains');
-let sandwiches = document.querySelector('.c-menu__menu-section-sandwiches');
 
 // Generate breakfasts
-
-breakfastItems.forEach((menuItem) => {
-  breakfast.innerHTML += `
-    <div class="c-menu__item">
-      <div class="c-menu__item-name">${menuItem.name}</div>
-      <p class="c-menu__item-price">${menuItem.price}</p>
-      <p>${menuItem.description}</p>
-    </div>
-  `;
-  
-  if(menuItem.extra) {
+function generateBreakfasts() {
+  breakfastItems.forEach((menuItem) => {
     breakfast.innerHTML += `
-    <div class="c-menu__item c-menu__item-extra">
-      <p>${menuItem.extra}</p>
-    </div>
+      <div class="c-menu__item">
+        <div class="c-menu__item-name">${menuItem.name}</div>
+        <p class="c-menu__item-price">${menuItem.price}</p>
+        <p>${menuItem.description}</p>
+      </div>
     `;
-  }
-});
-addExtras(breakfast);
+    
+    if(menuItem.extra) {
+      breakfast.innerHTML += `
+      <div class="c-menu__item c-menu__item-extra">
+        <p>${menuItem.extra}</p>
+      </div>
+      `;
+    }
+  });
+  addExtras(breakfast);
+}
+
 
 // Generate main meals
-
-mainsItems.forEach((menuItem) => {
-  mains.innerHTML += `
-  <div class="c-menu__item">
-    <div class="c-menu__item-name">${menuItem.name}</div>
-    <p class="c-menu__item-price">${menuItem.price}</p>
-    <p>${menuItem.description}</p>
-  </div>
-`;
-if(menuItem.extra) {
-  mains.innerHTML += `
-  <div class="c-menu__item c-menu__item-extra">
-    <p>${menuItem.extra}</p>
-  </div>
-  `;
+function generateMains() {
+  mainsItems.forEach((menuItem) => {
+    mains.innerHTML += `
+      <div class="c-menu__item">
+        <div class="c-menu__item-name">${menuItem.name}</div>
+        <p class="c-menu__item-price">${menuItem.price}</p>
+        <p>${menuItem.description}</p>
+      </div>
+    `;
+    if(menuItem.extra) {
+      mains.innerHTML += `
+        <div class="c-menu__item c-menu__item-extra">
+          <p>${menuItem.extra}</p>
+        </div>
+      `;
+    }
+  });
 }
-});
+
 
 // Generate sandwiches
+function generateSandwiches() {
+  sandwichItems.forEach((menuItem) => {
+    sandwiches.innerHTML += `
+      <div class="c-menu__item">
+        <div class="c-menu__item-name c-menu__sandwiches-name">
+          ${menuItem.name}
+        </div>
+        <div class="c-menu__sandwiches-prices">
+          <div>${menuItem.sPrice}</div>
+          <div>${menuItem.wPrice}</div>
+          <div>${menuItem.cPrice}</div>
+        </div>
+      </div>
+    `;
+  });
+}
 
-sandwichItems.forEach((menuItem) => {
-  sandwiches.innerHTML += `
-    <div class="c-menu__item">
-      <div class="c-menu__item-name c-menu__sandwiches-name">
-        ${menuItem.name}
+
+// Generate nibbles
+function generateNibbles() {
+  nibblesItems.forEach((menuItem) => {
+    nibbles.innerHTML += `
+      <div class="c-menu__item">
+        <div class="c-menu__item-name">
+          ${menuItem.name}
+        </div>
+        <div>${menuItem.price}</div>
       </div>
-      <div class="c-menu__sandwiches-prices">
-        <div>${menuItem.sPrice}</div>
-        <div>${menuItem.wPrice}</div>
-        <div>${menuItem.cPrice}</div>
-      </div>
-    </div>
-  `;
-});
+    `;
+  });
+}
+
 
 // **************************** Menu tabs ****************************
-
 
 // On the menu page, displays the lunch menu as a default
 document.getElementById('Breakfast').style.display = "block";
@@ -330,3 +351,12 @@ function openMenu(evt, menuName) {
   document.getElementById(menuName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function generateMenu() {
+  generateBreakfasts();
+  generateMains();
+  generateSandwiches();
+  generateNibbles();
+}
+
+generateMenu();
