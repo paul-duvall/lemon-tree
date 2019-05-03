@@ -241,67 +241,69 @@ function addExtras(section){
 }
 
 // Query selectors
-
-let breakfast = document.querySelector('.c-menu__menu-section-breakfast');
-let mains = document.querySelector('.c-menu__menu-section-mains');
-let sandwiches = document.querySelector('.c-menu__menu-section-sandwiches');
+const breakfast = document.querySelector('.c-menu__menu-section-breakfast');
+const mains = document.querySelector('.c-menu__menu-section-mains');
+const sandwiches = document.querySelector('.c-menu__menu-section-sandwiches');
 
 // Generate breakfasts
-
-breakfastItems.forEach((menuItem) => {
-  breakfast.innerHTML += `
-    <div class="c-menu__item">
-      <div class="c-menu__item-name">${menuItem.name}</div>
-      <p class="c-menu__item-price">${menuItem.price}</p>
-      <p>${menuItem.description}</p>
-    </div>
-  `;
-  
-  if(menuItem.extra) {
+function generateBreakfasts() {
+  breakfastItems.forEach((menuItem) => {
     breakfast.innerHTML += `
-    <div class="c-menu__item c-menu__item-extra">
-      <p>${menuItem.extra}</p>
-    </div>
+      <div class="c-menu__item">
+        <div class="c-menu__item-name">${menuItem.name}</div>
+        <p class="c-menu__item-price">${menuItem.price}</p>
+        <p>${menuItem.description}</p>
+      </div>
     `;
-  }
-});
-addExtras(breakfast);
+    
+    if(menuItem.extra) {
+      breakfast.innerHTML += `
+      <div class="c-menu__item c-menu__item-extra">
+        <p>${menuItem.extra}</p>
+      </div>
+      `;
+    }
+  });
+  addExtras(breakfast);
+}
 
 // Generate main meals
-
-mainsItems.forEach((menuItem) => {
-  mains.innerHTML += `
-  <div class="c-menu__item">
-    <div class="c-menu__item-name">${menuItem.name}</div>
-    <p class="c-menu__item-price">${menuItem.price}</p>
-    <p>${menuItem.description}</p>
-  </div>
-`;
-if(menuItem.extra) {
-  mains.innerHTML += `
-  <div class="c-menu__item c-menu__item-extra">
-    <p>${menuItem.extra}</p>
-  </div>
-  `;
+function generateMains() {
+  mainsItems.forEach((menuItem) => {
+    mains.innerHTML += `
+      <div class="c-menu__item">
+        <div class="c-menu__item-name">${menuItem.name}</div>
+        <p class="c-menu__item-price">${menuItem.price}</p>
+        <p>${menuItem.description}</p>
+      </div>
+    `;
+    if(menuItem.extra) {
+      mains.innerHTML += `
+        <div class="c-menu__item c-menu__item-extra">
+          <p>${menuItem.extra}</p>
+        </div>
+      `;
+    }
+  });
 }
-});
 
 // Generate sandwiches
-
-sandwichItems.forEach((menuItem) => {
-  sandwiches.innerHTML += `
-    <div class="c-menu__item">
-      <div class="c-menu__item-name c-menu__sandwiches-name">
-        ${menuItem.name}
+function generateSandwiches() {
+  sandwichItems.forEach((menuItem) => {
+    sandwiches.innerHTML += `
+      <div class="c-menu__item">
+        <div class="c-menu__item-name c-menu__sandwiches-name">
+          ${menuItem.name}
+        </div>
+        <div class="c-menu__sandwiches-prices">
+          <div>${menuItem.sPrice}</div>
+          <div>${menuItem.wPrice}</div>
+          <div>${menuItem.cPrice}</div>
+        </div>
       </div>
-      <div class="c-menu__sandwiches-prices">
-        <div>${menuItem.sPrice}</div>
-        <div>${menuItem.wPrice}</div>
-        <div>${menuItem.cPrice}</div>
-      </div>
-    </div>
-  `;
-});
+    `;
+  });
+}
 
 // **************************** Menu tabs ****************************
 
@@ -330,3 +332,12 @@ function openMenu(evt, menuName) {
   document.getElementById(menuName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+function generateMenu() {
+  generateBreakfasts();
+  generateMains();
+  generateSandwiches();
+
+}
+
+generateMenu();
