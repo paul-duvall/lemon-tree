@@ -17,6 +17,7 @@
     margin: 1rem;
     padding: 1rem 0 .7rem 0;
     width: 16rem;
+    outline: none;
   }
 
   button:hover{
@@ -70,12 +71,11 @@
   }
 
   &__item {
-    min-width: 40rem;
-    max-width: 40rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: $size-larger;
     color: $colour-darker;
+    margin: 0 auto;
+    margin-bottom: $size-larger;
+    width: 40rem;
+    text-align: center;
     
     p {
       font-size: $font-regular;
@@ -84,9 +84,8 @@
   }
 
   &__item-extra {
-    margin-top: -4rem;
     font-weight: bold;
-
+    margin-top: -4rem;
   }
 }
 
@@ -98,21 +97,21 @@
   }
 
   &-prices {
+    color: $colour-darker;
     display: flex;
     flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
     justify-content: space-around;
     padding-top: $size-medium;
-    font-family: 'Open Sans', sans-serif;
-    color: $colour-darker;
   }
 }
 
 // ********** Hot drinks section **********
 
 .c-menu__menu-section-drinks {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 
   h3 {
     color: $colour-darker;
@@ -120,10 +119,10 @@
   }
 
   p {
-    margin-top: -3rem;
     font-size: $font-regular;
     font-style: italic;
     text-align: center;
+    margin-top: -3rem;
   }
 }
 
@@ -140,19 +139,19 @@
 // For lists of different drink options
 .c-menu__drink-list {
   border: 1px solid red;
-  max-width: 40rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   margin-top: -2rem;
   margin-bottom: 1.5rem;
+  max-width: 40rem;
 
   li {
-    padding: 0 .4em;
-    margin: .2em .4em;
     font-size: $font-regular;
     font-style: italic;
+    margin: .2em .4em;
+    padding: 0 .4em;
   }
 }
 
@@ -174,10 +173,7 @@
 // Media queries
 
 @media only screen and (min-width: 600px) {
- 
-
   .c-menu {
-
     &__title {
       background-repeat: no-repeat;
       background-size: cover;
