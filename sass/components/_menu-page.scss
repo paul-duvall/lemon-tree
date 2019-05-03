@@ -76,6 +76,8 @@
   }
 }
 
+// Sandwiches section
+
 .c-menu__sandwiches {
   &-titles {
     display: none; 
@@ -90,6 +92,28 @@
     color: $colour-darker;
   }
 }
+
+// Hot drinks section
+
+.c-menu__drink-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-menu__drink-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: -2rem;
+
+  li {
+    padding: .2em .4em;
+    margin: .2em .4em;
+  }
+}
+
+// Menu tabs animation
 
 .tabcontent {
   display: none;

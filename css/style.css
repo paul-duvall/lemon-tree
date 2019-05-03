@@ -362,6 +362,20 @@ header {
   font-family: 'Open Sans', sans-serif;
   color: #2F4858; }
 
+.c-menu__drink-item {
+  display: flex;
+  justify-content: space-between; }
+
+.c-menu__drink-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: -2rem; }
+  .c-menu__drink-list li {
+    padding: .2em .4em;
+    margin: .2em .4em; }
+
 .tabcontent {
   display: none; }
 
