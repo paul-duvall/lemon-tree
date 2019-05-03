@@ -76,7 +76,7 @@
   }
 }
 
-// Sandwiches section
+// ********** Sandwiches section **********
 
 .c-menu__sandwiches {
   &-titles {
@@ -93,27 +93,50 @@
   }
 }
 
-// Hot drinks section
+// ********** Hot drinks section **********
+
+.c-menu__menu-section-drinks {
+  h3 {
+    color: $colour-darker;
+    margin: 2rem 0;
+  }
+
+  p {
+    margin-top: -3rem;
+    font-size: $font-regular;
+    font-style: italic;
+  }
+}
 
 .c-menu__drink-item {
   display: flex;
   justify-content: space-between;
+  
+  div {
+    font-size: $font-regular-plus;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
 }
 
+// For lists of different drink options
 .c-menu__drink-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   list-style: none;
   margin-top: -2rem;
+  margin-bottom: 1.5rem;
 
   li {
-    padding: .2em .4em;
+    padding: 0 .4em;
     margin: .2em .4em;
+    font-size: $font-regular;
+    font-style: italic;
   }
 }
 
-// Menu tabs animation
+// ********** Menu tabs animation **********
 
 .tabcontent {
   display: none;
