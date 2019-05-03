@@ -53,70 +53,76 @@
         <!-- Menu links -->
         <section>
           <div class="c-menu__links">
-            <button>Breakfast</button>
-            <button>Mains</button>
-            <button>Sandwiches</button>
-            <button>Nibbles</button>
-            <button>Drinks</button>    
+            <button class="tablinks" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
+            <button class="tablinks" onclick="openMenu(event, 'Mains')">Mains</button>
+            <button class="tablinks" onclick="openMenu(event, 'Sandwiches')">Sandwiches</button>
+            <button class="tablinks" onclick="openMenu(event, 'Nibbles')">Nibbles</button>
+            <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>    
           </div>
         </section>
 
         <div class="l-wrapper">
-          <div id="Breakfast">
+          
+          <div id="Breakfast" class="tabcontent">
             <div class="c-menu__title c-menu__title-breakfast">
               <h2>Breakfast</h2>
               <h3>A selection of tasty morning options</h3>
             </div>
-            <div class="c-menu__menu-section">
-              <!-- <div class="c-menu__menu-info">
-  
-              </div> -->
-              
-              <div class="c-menu__item">
-                <div class="c-menu__item-name">The Big Lemon Tree Breakfast</div>
-                <p class="c-menu__item-price">8.30</p>
-                <p class="c-menu__item-desc">
-                    Two rashers of back bacon, three quality butchers chipolatas, poached egg, ramekin of beans, sautéed mushrooms, potatoes, oven-roasted tomatoes and toast.
-                </p>
-                <p class="c-menu__item-extra">Or 5 items for £5.50!</p>
-              </div>   
-  
-              <div class="c-menu__item">
-                <div class="c-menu__item-name">Bacon or Sausage Ciabata</div>
-                <p class="c-menu__item-price">5.20</p>
-                <p class="c-menu__item-desc">
-                  Served on a toasted Ciabatta roll with a side of dressed rocket leaves.
-                </p>
-                <p class="c-menu__item-extra">Add an egg for 90p!</p>
-              </div>   
-  
-              <div class="c-menu__item">
-                <div class="c-menu__item-name">Mushrooms on toast (V) </div>
-                <p class="c-menu__item-price">5.50</p>
-                <p class="c-menu__item-desc">
-                  Sautéed button mushrooms on toast, drizzled with olive oil and garnished with dressed rocket leaves.
-                </p>
-              </div>   
-  
-              <div class="c-menu__item">
-                <div class="c-menu__item-name">Eggs anyhow (V)</div>
-                <p class="c-menu__item-price">5.70</p>
-                <p class="c-menu__item-desc">
-                  2 free range eggs fried, poached or scrambled and served on toast.
-                  Top with two extra bits of bacon or sausages for £2.00!
-                </p>
-              </div>   
-  
-              <div class="c-menu__item">
-                <div class="c-menu__item-name">The vegetarian LemonTree (V)</div>
-                <p class="c-menu__item-price">8.20</p>
-                <p class="c-menu__item-desc">
-                  Vegetarian sausage, poached egg, 2 hash browns, sautéed mushrooms, tomato, ramekin of beans and toast. 
-                </p>
-              </div>   
+            <div class="c-menu__menu-section c-menu__menu-section-breakfast">
             </div>
           </div>
+
+          <div id="Mains" class="tabcontent">
+            <div class="c-menu__title c-menu__title-breakfast">
+              <h2>Mains</h2>
+              <h3>A range of freshly-prepared meals</h3>
+            </div>
+            <div class="c-menu__menu-section c-menu__menu-section-mains">
+            </div>
+          </div>
+
+
+          <div id="Sandwiches" class="tabcontent">
+            <div class="c-menu__title c-menu__title-breakfast">
+              <h2>Sandwiches</h2>
+              <h3>All served with dressed salad and homemade coleslaw</h3>
+            </div>
+            <div class="c-menu__menu-section c-menu__menu-section-sandwiches">
+              <!-- Only needed for smaller viewports -->
+              <p class="c-menu-sandwiches-intro">
+                Prices below are given in the following order: sandwich, 12" wrap and toasted ciatbatta.
+              </p>
+              <!-- Only needed for larger viewports -->
+              <div class="c-menu__sandwiches-titles">
+                <div>Sandwich</div>
+                <div>12" Wrap</div>
+                <div>Toasted Ciabatta</div>
+              </div>
+              
+
+            </div>
+          </div>
+
+          <div id="Nibbles" class="tabcontent">
+            <div class="c-menu__title c-menu__title-breakfast">
+              <h2>Nibbles</h2>
+              <h3>Feeling peckish? Try our nibbles!</h3>
+            </div>
+            <div class="c-menu__menu-section c-menu__menu-section-nibbles">
+            </div>
+          </div>
+
+          <div id="Drinks" class="tabcontent">
+            <div class="c-menu__title c-menu__title-breakfast">
+              <h2>Drinks</h2>
+              <h3>We serve a range of drinks</h3>
+            </div>
+            <div class="c-menu__menu-section c-menu__menu-section-drinks">
+            </div>
+          </div>
+
         </div>
+
       </main>
     
       <footer class="c-footer">
@@ -127,5 +133,6 @@
   
 
   <script src="app.js"></script>
+  <script src="menu.js"></script>
 </body>
 </html>

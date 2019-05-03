@@ -14,6 +14,12 @@
     border: 2px solid $colour-darker;
     font-family: 'Special Elite', cursive;
     color: $colour-darker;
+    cursor: pointer;
+  }
+
+  button.active {
+    background-color: $colour-darker;
+    color: white;
   }
 }
 
@@ -41,6 +47,7 @@
 
   &__menu-section {
     padding-top: $size-larger;
+    text-align: center;
   }
 
   &__item-name {
@@ -61,4 +68,39 @@
     }
     
   }
+
+  &__item-extra {
+    margin-top: -4rem;
+    font-weight: bold;
+
+  }
+}
+
+.c-menu__sandwiches {
+  &-titles {
+    display: none; 
+  }
+
+  &-prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: $size-medium;
+    font-family: 'Open Sans', sans-serif;
+    color: $colour-darker;
+  }
+}
+
+.tabcontent {
+  display: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 2.5s; /* Fading effect takes 1 second */
+}
+
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
