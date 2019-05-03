@@ -42,7 +42,14 @@
       text-align: left;
       padding-top: 2rem;
       margin-left: 3rem;
+      max-width: 90%;
     }
+  }
+
+  &__section-main {
+    max-width: 100rem;
+    border: 3px solid $colour-darker;
+    margin-bottom: $size-larger;
   }
 
   &__menu-section {
@@ -56,7 +63,8 @@
   }
 
   &__item {
-    max-width: 80%;
+    min-width: 40rem;
+    max-width: 40rem;
     margin: 0 auto;
     text-align: center;
     margin-bottom: $size-larger;
@@ -66,7 +74,6 @@
       font-size: $font-regular;
       line-height: $size-large;
     }
-    
   }
 
   &__item-extra {
@@ -96,6 +103,10 @@
 // ********** Hot drinks section **********
 
 .c-menu__menu-section-drinks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   h3 {
     color: $colour-darker;
     margin: 2rem 0;
@@ -105,6 +116,7 @@
     margin-top: -3rem;
     font-size: $font-regular;
     font-style: italic;
+    text-align: center;
   }
 }
 
@@ -121,6 +133,8 @@
 
 // For lists of different drink options
 .c-menu__drink-list {
+  border: 1px solid red;
+  max-width: 40rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -150,4 +164,46 @@
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+// Media queries
+
+@media only screen and (min-width: 600px) {
+ 
+
+  .c-menu {
+
+    &__title {
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__menu-section {
+     display: flex;
+     flex-wrap: wrap;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .c-menu__links {
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .c-menu {
+    &__section-main {
+      min-width: 100rem;
+    }
+  }
+
+  .l-drinks-container {    
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .l-drinks-left, .l-drinks-right {
+    width: 50%;
+  }
 }
