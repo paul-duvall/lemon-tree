@@ -27,7 +27,7 @@ body {
 @media only screen and (min-width: 800px) {
   .l-container {
     width: 75%;
-    max-width: 80rem; } }
+    max-width: 100rem; } }
 
 body {
   font-size: 1.6rem; }
@@ -295,11 +295,14 @@ header {
     .c-header__text::after {
       margin-top: .7rem; } }
 
+.l-wrapper {
+  background: #cadf9e; }
+
 .c-menu__links {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 2.5rem; }
+  padding-bottom: 1.5rem; }
   .c-menu__links button {
     background: none;
     border: 2px solid #2F4858;
@@ -310,7 +313,7 @@ header {
     padding: 1rem 0 .7rem 0;
     width: 16rem; }
   .c-menu__links button:hover {
-    background: #faec9b; }
+    background-color: #fcf5cc; }
   .c-menu__links button.active {
     background-color: #2F4858;
     color: white; }
@@ -333,7 +336,8 @@ header {
 .c-menu__section-main {
   max-width: 100rem;
   border: 3px solid #2F4858;
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem;
+  background-color: #fcf5cc; }
 
 .c-menu__menu-section {
   padding-top: 3rem;

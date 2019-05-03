@@ -1,8 +1,12 @@
+.l-wrapper {
+  background: $colour-primary;
+}
+
 .c-menu__links {
   align-items: center;
   display: flex;
   flex-direction: column;
-  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
 
   button {
     background: none;
@@ -16,8 +20,7 @@
   }
 
   button:hover{
-    // background: lighten($colour-darker, 90%);
-    background: $colour-secondary;
+    background-color: lighten($colour-secondary, 10%);
   }
 
   button.active {
@@ -53,6 +56,7 @@
     max-width: 100rem;
     border: 3px solid $colour-darker;
     margin-bottom: $size-larger;
+    background-color: lighten($colour-secondary, 10%);
   }
 
   &__menu-section {
