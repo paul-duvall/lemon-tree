@@ -201,6 +201,41 @@ const sandwichItems = [
   }
 ];
 
+const extrasItems = [
+  {
+    name: 'Homemade Beans',
+    price: '1.60'
+  },
+  {
+    name: 'Heinz Beans',
+    price: '1.40'
+  },
+  {
+    name: 'Coleslaw',
+    price: '1.40'
+  },
+  {
+    name: 'Avocado',
+    price: '1.80'
+  },
+  {
+    name: 'Bacon',
+    price: '2.00'
+  },
+  {
+    name: 'Sausages',
+    price: '2.00'
+  },
+  {
+    name: 'Extra Egg',
+    price: '90p'
+  },
+  {
+    name: 'Black pudding',
+    price: '1.00'
+  },
+];
+
 // Query selectors
 const breakfast = document.querySelector('.c-menu__menu-section-breakfast');
 const mains = document.querySelector('.c-menu__menu-section-mains');
