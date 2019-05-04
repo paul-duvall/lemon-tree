@@ -201,15 +201,59 @@ const sandwichItems = [
   }
 ];
 
+const extrasItems = [
+  {
+    name: 'Homemade Beans',
+    price: '1.60'
+  },
+  {
+    name: 'Heinz Beans',
+    price: '1.40'
+  },
+  {
+    name: 'Coleslaw',
+    price: '1.40'
+  },
+  {
+    name: 'Avocado',
+    price: '1.80'
+  },
+  {
+    name: 'Bacon',
+    price: '2.00'
+  },
+  {
+    name: 'Sausages',
+    price: '2.00'
+  },
+  {
+    name: 'Extra Egg',
+    price: '90p'
+  },
+  {
+    name: 'Black pudding',
+    price: '1.00'
+  },
+];
+
 // Query selectors
 const breakfast = document.querySelector('.c-menu__menu-section-breakfast');
 const mains = document.querySelector('.c-menu__menu-section-mains');
 const sandwiches = document.querySelector('.c-menu__menu-section-sandwiches');
 const nibbles = document.querySelector('.c-menu__menu-section-nibbles');
-const extras = document.querySelector('.c-menu__extras');
+const extras = document.querySelectorAll('.c-menu__extras');
 
-function addExtras(section){
-  extras.innerHTML += `<p>Extras</p>`;
+function addExtras(){
+  extras.forEach((section) => {
+    extrasItems.forEach((menuItem) => {
+      section.innerHTML += `
+        <div class="c-menu__item">  
+          <div class="c-menu__item-name">${menuItem.name}</div>
+          <p class="c-menu__item-price">${menuItem.price}</p>
+        </div>
+      `;
+    });  
+  });
 }
 
 
@@ -224,7 +268,7 @@ function generateBreakfasts() {
       </div>
     `;
   });
-  addExtras(breakfast);
+  addExtras();
 }
 
 
