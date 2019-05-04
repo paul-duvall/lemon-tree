@@ -319,13 +319,29 @@ header {
     background-color: #2F4858;
     color: white; }
 
-.c-menu__title {
-  background: linear-gradient(rgba(202, 223, 158, 0.1), rgba(202, 223, 158, 0.4)), url(../../images/breaky.jpg);
-  background-position: center;
+.c-menu__title-breakfast {
+  background: url(../../images/breaky.jpg);
+  background-position-y: 40rem; }
+
+.c-menu__title-drinks {
+  background: url(../../images/coffees.jpg);
+  background-size: 30rem; }
+
+.c-menu__title-mains {
+  background: url(../../images/main.jpg);
   background-size: 55rem;
+  background-position-y: 40rem; }
+
+.c-menu__title-nibbles {
+  background-image: url(../../images/apple-cake1.jpg);
+  background-position-y: 40rem; }
+
+.c-menu__title {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
-  height: 24rem; }
+  height: 24rem;
+  background-color: #faec9b;
+  background-size: cover; }
   .c-menu__title h2, .c-menu__title h3 {
     color: white;
     text-shadow: 1px 1px 5px black;
@@ -335,11 +351,11 @@ header {
     max-width: 90%; }
 
 .c-menu__section-main {
-  max-width: 100rem;
-  width: 90vw;
+  background-color: #fcf5cc;
   border: 3px solid #2F4858;
   margin-bottom: 3rem;
-  background-color: #fcf5cc; }
+  max-width: 100rem;
+  width: 90vw; }
 
 .c-menu__menu-section {
   padding-top: 3rem;
@@ -426,19 +442,27 @@ header {
     opacity: 1; } }
 
 @media only screen and (min-width: 600px) {
-  .c-menu__title {
-    background-repeat: no-repeat;
-    background-size: cover; }
   .c-menu__menu-section {
     display: flex;
     flex-wrap: wrap; }
   .c-menu__item {
-    width: 40rem; } }
+    width: 40rem; }
+  .c-menu__title-image {
+    border-radius: 3px;
+    display: block;
+    max-width: 25rem;
+    width: 50%; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 950px) {
   .c-menu__links {
     flex-direction: row;
     justify-content: center; }
+  .c-menu__title {
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat; } }
+
+@media only screen and (min-width: 1200px) {
   .c-menu__section-main {
     min-width: 100rem; }
   .l-drinks-container {

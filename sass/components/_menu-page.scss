@@ -32,17 +32,33 @@
 }
 
 .c-menu {
-  &__title {
-    background: linear-gradient(
-      rgba($colour-primary, .1),
-      rgba($colour-primary, .4)
-      ),
-      url(../../images/breaky.jpg);
-    background-position: center;
+  &__title-breakfast {
+    background: url(../../images/breaky.jpg);
+    background-position-y: 40rem;
+  }
+
+  &__title-drinks {
+    background: url(../../images/coffees.jpg);
+    background-size: 30rem;
+  }
+
+  &__title-mains {
+    background: url(../../images/main.jpg);
     background-size: 55rem;
+    background-position-y: 40rem;
+  }
+
+  &__title-nibbles {
+    background-image: url(../../images/apple-cake1.jpg);
+    background-position-y: 40rem;
+  }
+
+  &__title {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
     height: 24rem;
+    background-color: $colour-secondary;
+    background-size: cover;
     
     h2, h3 {
       color: white;
@@ -55,11 +71,11 @@
   }
 
   &__section-main {
-    max-width: 100rem;
-    width: 90vw;
+    background-color: lighten($colour-secondary,10%);
     border: 3px solid $colour-darker;
     margin-bottom: $size-larger;
-    background-color: lighten($colour-secondary, 10%);
+    max-width: 100rem;
+    width: 90vw;    
   }
 
   &__menu-section {
@@ -178,11 +194,6 @@
 
 @media only screen and (min-width: 600px) {
   .c-menu {
-    &__title {
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
     &__menu-section {
      display: flex;
      flex-wrap: wrap;
@@ -191,23 +202,39 @@
     &__item {
       width: 40rem;
     }
+
+    &__title-image {
+      border-radius: 3px;
+      display: block;
+      max-width: 25rem;
+      width: 50%;      
+    }
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 950px) {
   .c-menu__links {
     flex-direction: row;
     justify-content: center;
   }
   
   .c-menu {
+    &__title {
+      background-size: 50%;
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media only screen and (min-width: 1200px) {  
+  .c-menu {
     &__section-main {
       min-width: 100rem;
-    }
-
-    
+    }   
   }
 
+  // Drinks in two columns
   .l-drinks-container {    
     display: flex;
     flex-direction: row;
