@@ -19,6 +19,9 @@ body {
   flex-direction: column;
   align-items: center; }
 
+.l-wrapper {
+  background: #cadf9e; }
+
 @media only screen and (min-width: 600px) {
   .l-container {
     max-width: 85%; } }
@@ -294,9 +297,6 @@ header {
     .c-header__text::after {
       margin-top: .7rem; } }
 
-.l-wrapper {
-  background: #cadf9e; }
-
 .c-menu__links {
   align-items: center;
   display: flex;
@@ -381,9 +381,6 @@ header {
   font-weight: bold;
   margin-top: -4rem; }
 
-.c-menu__sandwiches-titles {
-  display: none; }
-
 .c-menu__sandwiches-prices {
   color: #2F4858;
   display: flex;
@@ -391,6 +388,9 @@ header {
   font-family: 'Open Sans', sans-serif;
   justify-content: space-around;
   padding-top: 1rem; }
+
+.c-menu__menu-section-sandwiches p {
+  margin: 0 auto; }
 
 .c-menu__menu-section-drinks {
   align-items: center;

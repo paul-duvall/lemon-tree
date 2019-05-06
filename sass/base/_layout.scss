@@ -1,9 +1,12 @@
 .l-container {
-  // padding: 3rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.l-wrapper {
+  background: $colour-primary;
 }
 
 @media only screen and (min-width: 600px) {
