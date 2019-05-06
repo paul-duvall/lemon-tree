@@ -413,7 +413,6 @@ header {
     font-family: 'Open Sans', sans-serif; }
 
 .c-menu__drink-list {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -470,7 +469,10 @@ header {
     flex-direction: row;
     width: 100%; }
   .l-drinks-left, .l-drinks-right {
-    width: 50%; } }
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
 
 .c-nav {
   background-color: #cadf9e;

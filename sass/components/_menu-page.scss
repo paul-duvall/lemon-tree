@@ -158,7 +158,6 @@
 
 // For lists of different drink options
 .c-menu__drink-list {
-  border: 1px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -243,5 +242,9 @@
 
   .l-drinks-left, .l-drinks-right {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
   }
 }
