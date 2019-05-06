@@ -5,6 +5,11 @@ const breakfastItems = [
     description: 'Two rashers of back bacon, three quality butchers chipolatas, poached egg, ramekin of beans, sautéed mushrooms, potatoes, oven-roasted tomatoes and toast.<br><strong>Or 5 items for £5.50!</strong>'   
   },
   {
+    name: 'Eggs Anyhow (V)',
+    price: '5.70',
+    description: '2 free range eggs fried, poached or scrambled and served on toast. Top with two extra bits of bacon or sausages for <strong>£2.00</strong>'
+  },
+  {
     name: 'Bacon or Sausage Ciabata',
     price: '5.20',
     description: 'Served on a toasted Ciabatta roll with a side of dressed rocket leaves.'
@@ -13,11 +18,6 @@ const breakfastItems = [
     name: 'Mushrooms On Toast (V)',
     price: '5.50',
     description: 'Sauteed button mushrooms on toast, drizzled with olive oil and garnished with dressed rocket leaves.'
-  },
-  {
-    name: 'Eggs Anyhow (V)',
-    price: '5.70',
-    description: '2 free range eggs fried, poached or scrambled and served on toast. Top with two extra bits of bacon or sausages for <strong>£2.00</strong>'
   },
   {
     name: 'The Vegetarian LemonTree (V)',
@@ -30,9 +30,9 @@ const breakfastItems = [
     description: 'English muffin topped with our home cooked gammon, poached eggs and hollindaise sauce, with dressed leaves.<br>Florentine - swap the gammon for wilted spinach.'
   },
   {
-    name: 'Bacon OR Sausage Sandwich',
-    price: '4.50',
-    description: '<strong>Add an egg for 90p!</strong>'
+    name: 'Cowboy Beans',
+    price: '7.00',
+    description: 'Homemade beans with bacon and chorizo served on a slice of homemade sourdough toast and a side of dressed rocket leaves.'
   },
   {
     name: 'The Healthy LemonTree (GF)',
@@ -40,14 +40,14 @@ const breakfastItems = [
     description: '2 rashers of sliced bacon on a bed of dressed baby spinach, rocket, goats cheese, topped with a poached egg.'
   },
   {
-    name: 'Cowboy Beans',
-    price: '7.00',
-    description: 'Homemade beans with bacon and chorizo served on a slice of homemade sourdough toast and a side of dressed rocket leaves.'
-  },
-  {
     name: 'VeggieBoy Beans',
     price: '6.40',
     description: 'Cowboy beans but without the meaty bits.'
+  },
+  {
+    name: 'Bacon OR Sausage Sandwich',
+    price: '4.50',
+    description: '<strong>Add an egg for 90p!</strong>'
   }
 ];
 
@@ -56,6 +56,11 @@ const mainsItems = [
     name: 'The LemonTree Dog',
     price: '8.30',
     description: 'Our 9 inch quality butchers sausage served in a homemade brioche bun, with a base of sweet mustard, chopped gherkins and peppers. Topped with caramelised red onion chutney and American mustard. Served with chips and homemade coleslaw.'
+  },
+  {
+    name: 'Classic burger',
+    price: '9.95',
+    description: 'A 180g homemade beef patty with a base of sweet mustard, chopped gherkins and peppers, topped with mature Cheddar cheese, baby gem lettuce, red onion and tomato. Served in a homemade brioche bun with chips and coleslaw.<br><strong>Add Bacon for £1.00!</strong>'
   },
   {
     name: 'The LemonTree Chilli Dog',
@@ -73,9 +78,9 @@ const mainsItems = [
     description: '2 slices of toasted homemade sourdough with home baked gammon, swiss cheese and wholegrain mustard mayonnaise, served with a dressed salad and homemade coleslaw.'
   },
   {
-    name: 'Classic burger',
-    price: '9.95',
-    description: 'A 180g homemade beef patty with a base of sweet mustard, chopped gherkins and peppers, topped with mature Cheddar cheese, baby gem lettuce, red onion and tomato. Served in a homemade brioche bun with chips and coleslaw.<br><strong>Add Bacon for £1.00!</strong>'
+    name: 'Chicken Fajita',
+    price: '6.85',
+    description: 'Chicken cooked in a medium spiced fajita mix with peppers, onion and garlic, served in a 12" wrap with a side salad and homemade coleslaw, topped with sour cream.'
   },
   {
     name: 'Gammon, Egg and Chips (GF)',
@@ -83,19 +88,14 @@ const mainsItems = [
     description: 'Home baked gammon, 2 poached free-range eggs and chips.'
   },
   {
-    name: 'Jacket Potato (GF)',
-    price: '6.80',
-    description: 'Choose from: Tuna, chicken mayonnaise, homemade chilli, homemade or heinz beans, cheese (cheddar, goats cheese, swiss or brie), prawns in marie rose sauce. Served with dressed salad and homemade coleslaw. (Please note we do not put butter on our potatoes unless requested.)<br><strong>Add an extra topping for £1.00</strong>'
-  },
-  {
-    name: 'Chicken Fajita',
-    price: '6.85',
-    description: 'Chicken cooked in a medium spiced fajita mix with peppers, onion and garlic, served in a 12" wrap with a side salad and homemade coleslaw, topped with sour cream.'
-  },
-  {
     name: 'Chilli Nachos',
     price: '6.85',
     description: 'Nacho tortilla chips covered with our homemade chilli and topped with cheese and sour cream.' 
+  },
+  {
+    name: 'Jacket Potato (GF)',
+    price: '6.80',
+    description: 'Choose from: Tuna, chicken mayonnaise, homemade chilli, homemade or heinz beans, cheese (cheddar, goats cheese, swiss or brie), prawns in marie rose sauce. Served with dressed salad and homemade coleslaw. (Please note we do not put butter on our potatoes unless requested.)<br><strong>Add an extra topping for £1.00</strong>'
   }
 ];
 
