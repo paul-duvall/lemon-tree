@@ -83,10 +83,11 @@ a {
   background-size: cover;
   color: white; }
   .c-opening__times {
-    background: rgba(81, 81, 81, 0.45);
+    background: rgba(0, 0, 0, 0.25);
     border-radius: 3px;
-    padding: 3rem 0;
-    min-width: 80%; }
+    min-width: 80%;
+    margin: 3rem 0;
+    padding: 3rem 0; }
   .c-opening h2 {
     color: white; }
   .c-opening ul {
@@ -97,7 +98,8 @@ a {
     text-align: center; }
 
 .c-recommendations {
-  background: #F3F6EA; }
+  background: #F3F6EA;
+  padding: 3rem 0; }
   .c-recommendations h2 {
     padding-bottom: 2rem; }
   .c-recommendations__section {

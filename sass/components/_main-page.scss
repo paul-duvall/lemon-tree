@@ -10,6 +10,8 @@
   }
 }
 
+// Opening hours section
+
 .c-opening {
   background: linear-gradient(
     rgba($colour-primary, .4), 
@@ -17,16 +19,16 @@
     ),
     url(../../images/interior-2.jpg);
     background-position: center bottom;
-    // background-size: 120rem;
     background-size: cover;
-    
     color: white;
+    // max-width: 90rem;
 
     &__times {
-      background: rgba(#515151, .45);
+      background: rgba(#000000, .25);
       border-radius: 3px;
-      padding: $size-larger 0;
       min-width: 80%;
+      margin: $size-larger 0;
+      padding: $size-larger 0;
     }
 
     h2 {
@@ -44,8 +46,11 @@
     }
 }
 
+// Recommendations section
+
 .c-recommendations {
   background: $colour-light;
+  padding: $size-larger 0;
 
   h2 {
     padding-bottom: $size-large;
