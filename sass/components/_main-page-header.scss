@@ -22,16 +22,35 @@ header {
 // Section 2 (contains text)
 .c-header__right {
   align-items: center;
-  background: linear-gradient(
+  background-position: 10%, 10%;
+  display: flex;
+  justify-content: center;
+  min-height: 25rem;
+
+  &--home {
+    background: linear-gradient(
     rgba($colour-primary-dark, .6), 
     rgba($colour-primary-dark, .6)
     ),
     url(../../images/cake-display.jpg);
-  background-position: 10%, 10%;
-  // background-size: 100%;
-  display: flex;
-  min-height: 25rem;
-  justify-content: center;
+  }
+
+  &--contact {
+    background: linear-gradient(
+    rgba($colour-primary-dark, .6), 
+    rgba($colour-primary-dark, .6)
+    ),
+    url(../../images/exterior.jpg);
+  }
+
+  &--menu {
+    background: linear-gradient(
+    rgba($colour-primary-dark, .6), 
+    rgba($colour-primary-dark, .6)
+    ),
+    url(../../images/decorations.jpg);
+    
+  }
 }
 
 .c-header__text {

@@ -275,11 +275,16 @@ header {
 
 .c-header__right {
   align-items: center;
-  background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/cake-display.jpg);
   background-position: 10%, 10%;
   display: flex;
-  min-height: 25rem;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 25rem; }
+  .c-header__right--home {
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/cake-display.jpg); }
+  .c-header__right--contact {
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/exterior.jpg); }
+  .c-header__right--menu {
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/decorations.jpg); }
 
 .c-header__text {
   display: flex;
