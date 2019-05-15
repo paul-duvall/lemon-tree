@@ -1,0 +1,20 @@
+.c-contact {
+  &__item {
+    text-align: center;
+    padding: $size-large 0;
+  }
+
+  &__map {
+    text-align: center;
+  }
+}
+
+.fas {
+  color: $colour-darker;
+  font-size: 40px;
+  width: 40px;
+}
+
+iframe {
+  max-width: 90vw;
+}

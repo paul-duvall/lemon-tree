@@ -8,10 +8,10 @@ p, li {
   font-family: 'Open Sans', sans-serif;
   color: $colour-darker;
   line-height: $size-larger;
-  // letter-spacing: .15rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: $colour-darker;
   font-family: 'Special Elite', cursive;
   text-align: center;
   letter-spacing: .1rem;
