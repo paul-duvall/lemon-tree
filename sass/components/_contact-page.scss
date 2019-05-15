@@ -1,4 +1,11 @@
 .c-contact {
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5rem 5rem;
+  }
+  
   &__item {
     text-align: center;
     padding: $size-large 0;
@@ -17,4 +24,14 @@
 
 iframe {
   max-width: 90vw;
+}
+
+@media only screen and (min-width: 900px) {
+  .c-contact {
+    &__details {
+      flex-direction: row;
+      margin: 5rem 15rem;
+      justify-content: space-around;
+    }
+  }
 }

@@ -59,6 +59,12 @@ a {
   a:active, a:visited {
     color: #2F4858; }
 
+.c-contact__details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem 5rem; }
+
 .c-contact__item {
   text-align: center;
   padding: 2rem 0; }
@@ -73,6 +79,12 @@ a {
 
 iframe {
   max-width: 90vw; }
+
+@media only screen and (min-width: 900px) {
+  .c-contact__details {
+    flex-direction: row;
+    margin: 5rem 15rem;
+    justify-content: space-around; } }
 
 .c-footer {
   align-items: center;
