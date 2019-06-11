@@ -1,0 +1,13 @@
+.c-gallery {
+  margin: 10px 50px;
+
+  img {
+    transition: 1s;
+    padding: 1.5rem;
+  }
+
+  img:hover {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+  }
+}

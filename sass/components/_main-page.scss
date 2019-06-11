@@ -4,10 +4,6 @@
   h1 {
     margin-top: 3rem;
   }
-
-  p {
-    margin: 3rem 0;
-  }
 }
 
 // Opening hours section
@@ -21,7 +17,6 @@
     background-position: center bottom;
     background-size: cover;
     color: white;
-    // max-width: 90rem;
 
     &__times {
       background: rgba(#000000, .25);
