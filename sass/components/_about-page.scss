@@ -4,7 +4,7 @@
     background: white;
     padding: 2rem;
     width: 85vw; 
-    
+    margin-top: $size-large;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,10 +76,24 @@
       grid-row: 1;
     }
 
+    &__main-image {
+      padding: 10px;
+      background: $colour-primary;
+      width: 24rem;
+      height: 36rem;
+      justify-self: center;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 2rem;
+        left: 3rem;
+      }
+    }
+
     &__main-image1 {
       grid-column: 1;
-      grid-row: 1;
-      justify-self: center;
+      grid-row: 1;      
     }
 
     &__main-bottom {
@@ -90,7 +104,6 @@
     &__main-image2 {
       grid-column: 2;
       grid-row: 2;
-      justify-self: center;
     }
   }
 }

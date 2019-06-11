@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lemon Tree - Image Gallery</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Special+Elite" rel="stylesheet" type="text/css">
+  <link href="css/lightbox.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="l-wrapper">
+      <div class="c-nav">
+          <nav>
+            <ul class="c-nav__list">
+              <li class="c-nav__menu-item"><a href="#">Catering</a></li>
+              <li class="c-nav__menu-item c-nav__submenu"><a href="./menu.html">Menu</a>
+                <!-- <ul>
+                  <li><a href="#">Mains</a></li>
+                  <li><a href="#">Drinks</a></li>
+                  <li><a href="#">Snacks</a></li>
+                </ul> -->
+              </li>
+              <li class="c-nav__menu-item"><a href="./about.html">About</a></li>
+              <li class="c-nav__menu-item"><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="c-nav__burger">
+              <div class="c-nav__burger-line1"></div>
+              <div class="c-nav__burger-line2"></div>
+              <div class="c-nav__burger-line3"></div>
+            </div>
+          </nav>
+          <a href="index.html">
+            <div class="c-nav__icon">
+              <img src="./images/lemon.png" alt="The Lemon Tree Lemon">
+            </div>
+          </a> 
+        </div>
+        
+        <!-- (Or will the container class be on a div within the main header tag to be consistent with main below) -->
+        <header>
+          <div class="c-header__left">
+            <img src="images/logo2.png" />
+          </div>
+          <div class="c-header__right c-header__right--home">
+            <div class="c-header__text">
+              <h3>All about us</h3>
+              <h3>Find out what it is about the Lemon Tree</h3>
+              <h3>that makes us special</h3>
+            </div>
+          </div>
+        </header>
+      
+        <main>
+          <section class="c-welcome">
+            <div class="l-container">
+                <div class="c-gallery">
+                    <a href="images/image-gallery/afternoon-tea.jpg" data-lightbox="mygallery" data-title="Afternoon tea"><img src="./images/image-gallery/afternoon-tea-small.jpg"></a>
+                
+                    <a href="images/image-gallery/cake-and-tea.jpg" data-lightbox="mygallery" data-title="Cake and tea"><img src="./images/image-gallery/cake-and-tea-small.jpg"></a>
+                
+                    <a href="images/image-gallery/chocolate-orange-cake.jpg" data-lightbox="mygallery" data-title="Chocolate orange cake"><img src="./images/image-gallery/chocolate-orange-cake-small.jpg"></a>
+                
+                    <a href="images/image-gallery/nutella-milkshake.jpg" data-lightbox="mygallery" data-title="Nutella milkshake"><img src="./images/image-gallery/nutella-milkshake-small.jpg"></a>
+                
+                    <a href="images/image-gallery/toffee-apple-upside-down-cake.jpg" data-lightbox="mygallery" data-title="Toffee and apple upside-down cake"><img src="./images/image-gallery/toffee-apple-upside-down-cake-small.jpg"></a>
+                
+                    <a href="images/image-gallery/vegan-chocolate-cake.jpg" data-lightbox="mygallery" data-title="Vegan chocolate cake"><img src="./images/image-gallery/vegan-chocolate-cake-small.jpg"></a>
+                  </div>
+            </div>
+          </section>
+        </main>
+      
+        <footer class="c-footer">
+            <div class="c-footer__copyright">Copyright <span class="c-footer__date"></span> Lemon Tree</div>
+            <div class="c-footer__designed-by">Site by <a href="https://www.pjdwebdesign.com">PJD Web Design</a></div>
+        </footer>
+    </div>
+    
+  
+    <script src="app.js"></script>
+    <script src="lightbox-plus-jquery.min.js"></script>
+  </body>
+</html>
