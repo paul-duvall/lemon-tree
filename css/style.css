@@ -11,7 +11,9 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #F3F6EA; }
+  background-color: #F3F6EA;
+  width: 100vw;
+  border: 2px solid red; }
 
 .l-container {
   margin: 0 auto;
@@ -592,7 +594,8 @@ header {
   background-color: #cadf9e;
   position: relative;
   font-size: 2rem;
-  height: 6.3rem; }
+  height: 6.3rem;
+  border: 2px solid green; }
   .c-nav nav {
     display: flex;
     flex-direction: column;
@@ -608,7 +611,8 @@ header {
   .c-nav__menu-item {
     font-family: 'Special Elite', cursive;
     display: inline-block;
-    position: relative; }
+    position: relative;
+    border: 2px solid orange; }
     .c-nav__menu-item a {
       text-decoration: none; }
     .c-nav__menu-item a:link,
@@ -654,6 +658,10 @@ header {
     transition: all .3s ease; }
 
 @media screen and (max-width: 765px) {
+  nav {
+    overflow-x: hidden; }
+  .active {
+    overflow-x: visible; }
   .c-nav__list {
     position: absolute;
     right: 0;

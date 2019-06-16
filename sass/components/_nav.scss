@@ -3,6 +3,7 @@
   position: relative;
   font-size: 2rem;
   height: 6.3rem;
+  border: 2px solid green;
 
   nav {
     display: flex;
@@ -10,6 +11,7 @@
     align-items: center;
     position: relative;
   }
+
   &__list {
     display: flex;
     justify-content: space-around;
@@ -23,6 +25,7 @@
     font-family: 'Special Elite', cursive;
     display: inline-block;
     position: relative;
+    border: 2px solid orange;
 
     a {
       text-decoration: none;
@@ -89,7 +92,11 @@
 @media screen and (max-width: 765px) {
   // Ensures that the responsive menu is not visible when hidden
   nav {
-    // overflow-x: hidden;
+    overflow-x: hidden;
+  }
+
+  .active {
+    overflow-x: visible;
   }
 
   .c-nav {

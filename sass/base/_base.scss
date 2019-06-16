@@ -14,4 +14,6 @@ html {
 body {
   box-sizing: border-box;
   background-color: $colour-light;
+  width: 100vw;
+  border: 2px solid red;
 }
