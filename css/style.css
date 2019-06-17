@@ -189,7 +189,8 @@ iframe {
     transform: scale(1.1); }
 
 .c-welcome {
-  background: #cadf9e; }
+  background: #cadf9e;
+  padding: 2rem; }
   .c-welcome h1 {
     margin-top: 3rem; }
 
