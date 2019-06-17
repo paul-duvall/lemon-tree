@@ -3,7 +3,7 @@
   position: relative;
   font-size: 2rem;
   height: 6.3rem;
-  border: 2px solid green;
+  // border: 2px solid green;
 
   nav {
     display: flex;
@@ -25,7 +25,6 @@
     font-family: 'Special Elite', cursive;
     display: inline-block;
     position: relative;
-    border: 2px solid orange;
 
     a {
       text-decoration: none;
@@ -109,12 +108,12 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      transform: translateX(100%);
+      transform: translateY(100%);
       transition: transform 0.5s ease-in;
 
       // --active class applied when burger is clicked
       &--active {
-        transform: translateX(0%);
+        transform: translateY(0%);
       }
     }
 

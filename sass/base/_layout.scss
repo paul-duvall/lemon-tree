@@ -16,6 +16,11 @@
 }
 
 @media only screen and (min-width: 800px) {
+  .l-wrapper {
+    margin: 0 auto;
+    max-width: 120rem;
+  }
+  
   .l-container {
     width: 75%;
     max-width: 100rem;
