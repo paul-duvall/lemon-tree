@@ -1,5 +1,6 @@
 .c-welcome {
   background: $colour-primary;
+  padding: $size-large;
 
   h1 {
     margin-top: 3rem;
@@ -54,7 +55,7 @@
   &__section {
     background: white;
     border: 3px solid $colour-dark;
-    width: 35rem;
+    width: 27rem;
     position: relative;
     height: 30rem;
     overflow: hidden;
@@ -150,6 +151,10 @@
       grid-template-rows: repeat(3, auto);
     }
   
+    &__section {
+      width: 35rem;
+    }
+
     &__section1 {
       grid-row-start: 1;
       grid-column-start: 2;

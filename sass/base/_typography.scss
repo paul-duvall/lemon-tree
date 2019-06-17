@@ -7,7 +7,7 @@ p, li {
   font-size: $font-regular-plus;
   font-family: 'Open Sans', sans-serif;
   color: $colour-darker;
-  line-height: $size-larger;
+  line-height: 2.5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,5 +31,11 @@ a {
 
   &:active, &:visited {
     color: $colour-darker;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  p, li {
+    line-height: 3.5rem;
   }
 }
