@@ -30,8 +30,9 @@
 .c-menu {
   // Sets the background image for the menu sections
   &__title-breakfast {
-    background: url(../../images/breaky.jpg);
-    background-position-y: 40rem;
+    background: url(../../images/menu-eggs.jpg);
+    // background-position-y: 20rem;
+    background-position: center center;
   }
 
   &__title-drinks {
@@ -40,14 +41,14 @@
   }
 
   &__title-mains {
-    background: url(../../images/main.jpg);
+    background: url(../../images/menu-hotdog.JPG);
     background-size: 55rem;
     background-position-y: 40rem;
   }
 
   &__title-nibbles {
-    background-image: url(../../images/apple-cake1.jpg);
-    background-position-y: 40rem;
+    background-image: url(../../images/image-gallery/chocolate-orange-cake.jpg);
+    background-position-x: center top;
   }
 
   // Styling for all menu section title sections

@@ -370,11 +370,22 @@ header {
   justify-content: center;
   min-height: 25rem; }
   .c-header__right--home {
-    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/cake-display.jpg); }
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/interior-3.JPG);
+    background-size: cover;
+    background-position: center; }
   .c-header__right--contact {
     background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/exterior.jpg); }
+  .c-header__right--about {
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/interior-4.JPG);
+    background-size: cover;
+    background-position: center; }
+  .c-header__right--gallery {
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/image-gallery/afternoon-tea-2.jpg);
+    background-position: bottom center; }
   .c-header__right--menu {
-    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/decorations.jpg); }
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/image-gallery/cake-and-tea.jpg);
+    background-size: cover;
+    background-position: center; }
 
 .c-header__text {
   display: flex;
@@ -442,21 +453,21 @@ header {
     color: white; }
 
 .c-menu__title-breakfast {
-  background: url(../../images/breaky.jpg);
-  background-position-y: 40rem; }
+  background: url(../../images/menu-eggs.jpg);
+  background-position: center center; }
 
 .c-menu__title-drinks {
   background: url(../../images/coffees.jpg);
   background-size: 30rem; }
 
 .c-menu__title-mains {
-  background: url(../../images/main.jpg);
+  background: url(../../images/menu-hotdog.JPG);
   background-size: 55rem;
   background-position-y: 40rem; }
 
 .c-menu__title-nibbles {
-  background-image: url(../../images/apple-cake1.jpg);
-  background-position-y: 40rem; }
+  background-image: url(../../images/image-gallery/chocolate-orange-cake.jpg);
+  background-position-x: center top; }
 
 .c-menu__title {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);
