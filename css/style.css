@@ -179,7 +179,11 @@ iframe {
     margin-bottom: 1rem; }
 
 .c-gallery {
-  margin: 10px 50px; }
+  margin: 10px 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
   .c-gallery img {
     transition: 1s;
     padding: 1.5rem; }
@@ -194,13 +198,12 @@ iframe {
     margin-top: 3rem; }
 
 .c-opening {
-  background: linear-gradient(rgba(202, 223, 158, 0.4), rgba(202, 223, 158, 0.4)), url(../../images/interior-2.jpg);
-  background-position: center bottom;
+  background: linear-gradient(rgba(202, 223, 158, 0.4), rgba(202, 223, 158, 0.4)), url(../../images/wall.jpg);
+  background-position: center;
   background-size: cover;
   color: white; }
   .c-opening__times {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.35);
     min-width: 80%;
     margin: 3rem 0;
     padding: 3rem 0; }
@@ -221,12 +224,13 @@ iframe {
   .c-recommendations__section {
     background: white;
     border: 3px solid #006274;
-    width: 27rem;
+    width: 32rem;
     position: relative;
     height: 30rem;
     overflow: hidden; }
     .c-recommendations__section p {
-      padding: 3rem 5rem; }
+      padding: 3rem 5rem;
+      line-height: 1.5; }
   .c-recommendations__image1 {
     width: 35rem;
     position: absolute;
@@ -285,12 +289,12 @@ iframe {
   grid-row-start: 6;
   grid-column-start: 2; }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .c-recommendations__main {
     grid-template-columns: 5rem auto auto 5rem;
     grid-template-rows: repeat(3, auto); }
   .c-recommendations__section {
-    width: 35rem; }
+    width: 30rem; }
   .c-recommendations__section1 {
     grid-row-start: 1;
     grid-column-start: 2;
@@ -324,12 +328,15 @@ iframe {
   .c-recommendations__main {
     grid-template-columns: 5rem repeat(3, auto) 5rem;
     grid-template-rows: auto auto; }
+  .c-recommendations__section {
+    width: 35rem; }
   .c-recommendations__section1 {
     grid-row-start: 1;
     grid-column-start: 2; }
   .c-recommendations__section2 {
     grid-row-start: 1;
-    grid-column-start: 3; }
+    grid-column-start: 3;
+    padding-top: 3rem; }
   .c-recommendations__section3 {
     grid-row-start: 1;
     grid-column-start: 4;
@@ -337,7 +344,8 @@ iframe {
   .c-recommendations__section4 {
     grid-row-start: 2;
     grid-column-start: 2;
-    border-bottom: 3px solid #006274; }
+    border-bottom: 3px solid #006274;
+    padding-top: 3rem; }
   .c-recommendations__section5 {
     grid-row-start: 2;
     grid-column-start: 3;
@@ -346,7 +354,8 @@ iframe {
   .c-recommendations__section6 {
     grid-row-start: 2;
     grid-column-start: 4;
-    border-left: none; } }
+    border-left: none;
+    padding-top: 3rem; } }
 
 header {
   display: flex;
@@ -370,11 +379,22 @@ header {
   justify-content: center;
   min-height: 25rem; }
   .c-header__right--home {
-    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/cake-display.jpg); }
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/header-home.jpg);
+    background-size: cover;
+    background-position: center; }
   .c-header__right--contact {
-    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/exterior.jpg); }
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/fireplace.jpg); }
+  .c-header__right--about {
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/exterior.JPG);
+    background-size: cover;
+    background-position: center; }
+  .c-header__right--gallery {
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/image-gallery/afternoon-tea-2.jpg);
+    background-position: bottom center; }
   .c-header__right--menu {
-    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/decorations.jpg); }
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/image-gallery/cake-and-tea.jpg);
+    background-size: cover;
+    background-position: center; }
 
 .c-header__text {
   display: flex;
@@ -442,21 +462,21 @@ header {
     color: white; }
 
 .c-menu__title-breakfast {
-  background: url(../../images/breaky.jpg);
-  background-position-y: 40rem; }
+  background: url(../../images/menu-eggs.jpg);
+  background-position: center center; }
 
 .c-menu__title-drinks {
   background: url(../../images/coffees.jpg);
   background-size: 30rem; }
 
 .c-menu__title-mains {
-  background: url(../../images/main.jpg);
+  background: url(../../images/menu-hotdog.JPG);
   background-size: 55rem;
   background-position-y: 40rem; }
 
 .c-menu__title-nibbles {
-  background-image: url(../../images/apple-cake1.jpg);
-  background-position-y: 40rem; }
+  background-image: url(../../images/image-gallery/chocolate-orange-cake.jpg);
+  background-position-x: center top; }
 
 .c-menu__title {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 75%);

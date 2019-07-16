@@ -14,14 +14,13 @@
     rgba($colour-primary, .4), 
     rgba($colour-primary, .4)
     ),
-    url(../../images/interior-2.jpg);
-    background-position: center bottom;
+    url(../../images/wall.jpg);
+    background-position: center;
     background-size: cover;
     color: white;
 
     &__times {
-      background: rgba(#000000, .25);
-      border-radius: 3px;
+      background: rgba(#000000, .35);
       min-width: 80%;
       margin: $size-larger 0;
       padding: $size-larger 0;
@@ -55,13 +54,14 @@
   &__section {
     background: white;
     border: 3px solid $colour-dark;
-    width: 27rem;
+    width: 32rem;
     position: relative;
     height: 30rem;
     overflow: hidden;
 
     p {
       padding: $size-larger 5rem;
+      line-height: 1.5;
     }
   }
 
@@ -144,7 +144,7 @@
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .c-recommendations {
     &__main {
       grid-template-columns: 5rem auto auto 5rem;
@@ -152,7 +152,7 @@
     }
   
     &__section {
-      width: 35rem;
+      width: 30rem;
     }
 
     &__section1 {
@@ -204,6 +204,10 @@
       grid-template-rows: auto auto;
     }
 
+    &__section {
+      width: 35rem;      
+    }
+
     &__section1 {
       grid-row-start: 1;
       grid-column-start: 2;
@@ -212,6 +216,7 @@
     &__section2 {
       grid-row-start: 1;
       grid-column-start: 3;
+      padding-top: 3rem;
     }
 
     &__section3 {
@@ -224,6 +229,7 @@
       grid-row-start: 2;
       grid-column-start: 2;
       border-bottom: 3px solid $colour-dark;
+      padding-top: 3rem;
     }
 
     &__section5 {
@@ -237,6 +243,7 @@
       grid-row-start: 2;
       grid-column-start: 4;
       border-left: none;
+      padding-top: 3rem;
     }
   }
 }

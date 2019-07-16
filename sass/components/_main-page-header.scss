@@ -32,7 +32,9 @@ header {
     rgba($colour-primary-dark, .6), 
     rgba($colour-primary-dark, .6)
     ),
-    url(../../images/cake-display.jpg);
+    url(../../images/header-home.jpg);
+    background-size: cover;
+    background-position: center;
   }
 
   &--contact {
@@ -40,7 +42,26 @@ header {
     rgba($colour-primary-dark, .6), 
     rgba($colour-primary-dark, .6)
     ),
-    url(../../images/exterior.jpg);
+    url(../../images/fireplace.jpg);
+  }
+
+  &--about {
+    background: linear-gradient(
+    rgba($colour-primary-dark, .6), 
+    rgba($colour-primary-dark, .6)
+    ),
+    url(../../images/exterior.JPG);
+    background-size: cover;
+    background-position: center;
+  }
+
+  &--gallery {
+    background: linear-gradient(
+    rgba($colour-primary-dark, .6), 
+    rgba($colour-primary-dark, .6)
+    ),
+    url(../../images/image-gallery/afternoon-tea-2.jpg);
+    background-position: bottom center;
   }
 
   &--menu {
@@ -48,8 +69,9 @@ header {
     rgba($colour-primary-dark, .6), 
     rgba($colour-primary-dark, .6)
     ),
-    url(../../images/decorations.jpg);
-    
+    url(../../images/image-gallery/cake-and-tea.jpg);
+    background-size: cover;
+    background-position: center;
   }
 }
 
