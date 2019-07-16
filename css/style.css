@@ -179,7 +179,11 @@ iframe {
     margin-bottom: 1rem; }
 
 .c-gallery {
-  margin: 10px 50px; }
+  margin: 10px 50px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
   .c-gallery img {
     transition: 1s;
     padding: 1.5rem; }
