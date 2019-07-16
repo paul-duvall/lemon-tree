@@ -8,293 +8,283 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Special+Elite" rel="stylesheet">
 </head>
+
 <body>
   <div class="l-wrapper">
     <div class="c-nav">
-        <nav>
-          <ul class="c-nav__list">
-            <li class="c-nav__menu-item c-nav__submenu"><a href="#">Menu</a>
-              <!-- <ul>
-                <li><a href="#">Mains</a></li>
-                <li><a href="#">Drinks</a></li>
-                <li><a href="#">Snacks</a></li>
-              </ul> -->
-            </li>
-            <li class="c-nav__menu-item"><a href="./gallery.html">Gallery</a></li>
-            <li class="c-nav__menu-item"><a href="./about.html">About</a></li>
-            <li class="c-nav__menu-item"><a href="./contact.html">Contact</a></li>
-          </ul>
-          <div class="c-nav__burger">
-            <div class="c-nav__burger-line1"></div>
-            <div class="c-nav__burger-line2"></div>
-            <div class="c-nav__burger-line3"></div>
-          </div>
-        </nav>
-        <a href="index.html">
-          <div class="c-nav__icon">
-            <img src="./images/lemon.png" alt="The Lemon Tree Lemon">
-          </div>
-        </a>
+      <nav class="nav">
+        <ul class="c-nav__list">
+          <li class="c-nav__menu-item c-nav__submenu"><a href="./menu.html">Menu</a></li>
+          <li class="c-nav__menu-item"><a href="./gallery.html">Gallery</a></li>
+          <li class="c-nav__menu-item"><a href="./about.html">About</a></li>
+          <li class="c-nav__menu-item"><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="c-nav__burger">
+        <div class="c-nav__burger-line1"></div>
+        <div class="c-nav__burger-line2"></div>
+        <div class="c-nav__burger-line3"></div>
       </div>
+      <a href="index.html">
+        <div class="c-nav__icon">
+          <img src="./images/lemon.png" alt="The Lemon Tree Lemon">
+        </div>
+      </a>
+    </div>
       
-      <!-- (Or will the container class be on a div within the main header tag to be consistent with main below) -->
-      <header>
-        <div class="c-header__left">
-          <img src="images/logo2.png" />
-        </div>
-        <div class="c-header__right c-header__right--menu">
-          <div class="c-header__text">
-            <h3>Contact us</h3>
-            
-            
-          </div>
-        </div>
-      </header>
+  <header>
+    <div class="c-header__left">
+      <img src="images/logo2.png" />
+    </div>
+    <div class="c-header__right c-header__right--menu">
+      <div class="c-header__text">
+        <h3>Take a look at</h3>
+        <h3>our delicious menu</h3>
+      </div>
+    </div>
+  </header>
     
-      <main>
-        <div class="l-container">
-          <!-- Menu links -->
-          <section>
-            <div class="c-menu__links">
-              <button class="tablinks" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
-              <button class="tablinks" onclick="openMenu(event, 'Mains')">Mains</button>
-              <button class="tablinks" onclick="openMenu(event, 'Sandwiches')">Sandwiches</button>
-              <button class="tablinks" onclick="openMenu(event, 'Nibbles')">Nibbles</button>
-              <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>    
-            </div>
-          </section>
-          
-          <div id="Breakfast" class="tabcontent c-menu__section-main">
-            <div class="c-menu__title c-menu__title-breakfast">
-              <h2>Breakfast</h2>
-              <h3>A selection of tasty morning<br>options</h3>
-            </div>
-            <div class="c-menu__menu-section c-menu__menu-section-breakfast">
-            </div>
-            <h2>Extras</h2>
-            <div class="c-menu__menu-section c-menu__extras"></div>
-          </div>
-
-          <div id="Mains" class="tabcontent c-menu__section-main">
-            <div class="c-menu__title c-menu__title-mains">
-              <h2>Mains</h2>
-              <h3>A range of freshly-prepared meals</h3>
-            </div>
-            <div class="c-menu__menu-section c-menu__menu-section-mains">
-            </div>
-            <h2>Extras</h2>
-            <div class="c-menu__menu-section c-menu__extras"></div>
-          </div>
-
-
-          <div id="Sandwiches" class="tabcontent c-menu__section-main">
-            <div class="c-menu__title c-menu__title-sandwiches">
-              <h2>Sandwiches</h2>
-              <h3>All served with dressed salad and homemade coleslaw</h3>
-            </div>
-            <div class="c-menu__menu-section c-menu__menu-section-sandwiches">
-              <p class="c-menu-sandwiches-intro">
-                Prices below are given in the following order: sandwich, 12" wrap and toasted ciatbatta.
-              </p>
-            </div>
-          </div>
-
-          <div id="Nibbles" class="tabcontent c-menu__section-main">
-            <div class="c-menu__title c-menu__title-nibbles">
-              <h2>Nibbles</h2>
-              <h3>Feeling peckish? Try our nibbles!</h3>
-            </div>
-            <div class="c-menu__menu-section c-menu__menu-section-nibbles">
-            </div>
-          </div>
-
-          <div id="Drinks" class="tabcontent c-menu__section-main">
-            <div class="c-menu__title c-menu__title-drinks">
-              <h2>Drinks</h2>
-              <h3>We serve a range of drinks</h3>
-            </div>
-            
-            <div class="c-menu__menu-section-drinks">
-              <div class="l-drinks-container">
-                <div class="l-drinks-left">    
-                    <h3>Hot drinks</h3>
-                    <p>All coffee available decaffeinated.</p>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Espresso</div>
-                      <div>1.70</div>
-                    </div>
-                      <div class="c-menu__item c-menu__drink-item">
-                      <div>Double Espresso</div>
-                      <div>2.30</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Americano</div>
-                      <div>2.10</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Macchiato</div>
-                      <div>2.30</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Cappucino</div>
-                      <div>2.50</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Cortardo</div>
-                      <div>2.30</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Flat White</div>
-                      <div>3.00</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Iced coffee</div>
-                      <div>2.50</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Mocha (milk / white chocolate)</div>
-                      <div>2.85</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Chai Latte</div>
-                      <div>2.50</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Latte</div>
-                      <div>2.50</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Baby Chino</div>
-                      <div>1.80</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Extra shot of Espresso</div>
-                      <div>65p</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Shot of Syrup</div>
-                      <div>65p</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Milk - hot or cold</div>
-                      <div>65p</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Hot Chocolate</div>
-                      <div>2.70</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Hot Chocolate Deluxe</div>
-                      <div>3.00</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Breakfast Tea / Decaff</div>
-                      <div>2.00</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Herbal Teas</div>
-                      <div>2.10</div>
-                    </div>
-                    <ul class="c-menu__drink-list">
-                      <li>Earl Grey</li>
-                      <li>Camomile</li>
-                      <li>Lemongrass & Ginger</li>
-                      <li>Peppermint</li>
-                      <li>Green</li>
-                      <li>Redbush</li>
-                      <li>Red Berry & Flower</li>
-                    </ul>
-                </div>
-                <div class="l-drinks-right">
-                  <h3>Cold Drinks</h3>
-                  <div class="c-menu__item c-menu__drink-item">
-                      <div>Milkshakes</div>
-                      <div>2.60</div>
-                    </div>
-                    <ul class="c-menu__drink-list">
-                      <li>Chocolate</li>
-                      <li>Banana</li>
-                      <li>Raspberry</li>
-                      <li>Vanilla</li>
-                      <li>Strawberry</li>
-                    </ul>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Signature Deluxe Shakes</div>
-                      <div>3.70</div>
-                    </div>
-                    <ul class="c-menu__drink-list">
-                      <li>Oreo</li>
-                      <li>Nutella</li>
-                      <li>Kit Kat</li>
-                    </ul>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Smoothies</div>
-                      <div>3.15</div>
-                    </div>
-                    <p>Please see board for flavours</p>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Belvoir Presse</div>
-                      <div>2.45</div>
-                    </div>
-                    <p>Please see board for flavours</p>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Cans from the fridge</div>
-                      <div>1.55</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Ice Tea</div>
-                      <div>1.85</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Sparkling Water</div>
-                      <div>1.45</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Mineral Water</div>
-                      <div>1.45</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Apple or Orange Juice</div>
-                      <div>1.50</div>
-                    </div>
+  <main>
+    <div class="l-container">
+      <!-- Menu links -->
+      <section>
+        <div class="c-menu__links">
+          <button class="tablinks" onclick="openMenu(event, 'Breakfast')">Breakfast</button>
+          <button class="tablinks" onclick="openMenu(event, 'Mains')">Mains</button>
+          <button class="tablinks" onclick="openMenu(event, 'Sandwiches')">Sandwiches</button>
+          <button class="tablinks" onclick="openMenu(event, 'Nibbles')">Nibbles</button>
+          <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>    
+        </div>
+      </section>
       
-                    <h3>For the Grown-ups</h3>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Bottled Lager 330ml (4.5%)</div>
-                      <div>3.80</div>
-                    </div>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>Aspalls Suffolk Cider 500ml (5.5%)</div>
-                      <div>4.20</div>
-                    </div>
-                    <p>Guest beers - please ask for selection</p>
-      
-                    <h3>Small But Perfectly-Formed Wines</h3>
-                    <div class="c-menu__item c-menu__drink-item">
-                      <div>187ml bottle</div>
-                      <div>4.20</div>
-                    </div>
-                    <ul class="c-menu__drink-list">
-                      <li>Pino Grigio (12.5%)</li>
-                      <li>Sauvignon Blanc (12.5%)</li>
-                      <li>Chardonnay (13.5%)</li>
-                      <li>Rose (13%)</li>
-                      <li>Shiraz (14%)</li>
-                      <li>Prosecco - 200ml (11%)</li>
-                    </ul>
-                </div>
+      <div id="Breakfast" class="tabcontent c-menu__section-main">
+        <div class="c-menu__title c-menu__title-breakfast">
+          <h2>Breakfast</h2>
+          <h3>A selection of tasty morning<br>options</h3>
+        </div>
+        <div class="c-menu__menu-section c-menu__menu-section-breakfast">
+        </div>
+        <h2>Extras</h2>
+        <div class="c-menu__menu-section c-menu__extras"></div>
+      </div>
+
+      <div id="Mains" class="tabcontent c-menu__section-main">
+        <div class="c-menu__title c-menu__title-mains">
+          <h2>Mains</h2>
+          <h3>A range of freshly-prepared meals</h3>
+        </div>
+        <div class="c-menu__menu-section c-menu__menu-section-mains">
+        </div>
+        <h2>Extras</h2>
+        <div class="c-menu__menu-section c-menu__extras"></div>
+      </div>
+
+      <div id="Sandwiches" class="tabcontent c-menu__section-main">
+        <div class="c-menu__title c-menu__title-sandwiches">
+          <h2>Sandwiches</h2>
+          <h3>All served with dressed salad and homemade coleslaw</h3>
+        </div>
+        <div class="c-menu__menu-section c-menu__menu-section-sandwiches">
+          <p class="c-menu-sandwiches-intro">
+            Prices below are given in the following order: sandwich, 12" wrap and toasted ciatbatta.
+          </p>
+        </div>
+      </div>
+
+      <div id="Nibbles" class="tabcontent c-menu__section-main">
+        <div class="c-menu__title c-menu__title-nibbles">
+          <h2>Nibbles</h2>
+          <h3>Feeling peckish? Try our nibbles!</h3>
+        </div>
+        <div class="c-menu__menu-section c-menu__menu-section-nibbles">
+        </div>
+      </div>
+
+      <div id="Drinks" class="tabcontent c-menu__section-main">
+        <div class="c-menu__title c-menu__title-drinks">
+          <h2>Drinks</h2>
+          <h3>We serve a range of drinks</h3>
+        </div>
+        
+        <div class="c-menu__menu-section-drinks">
+          <div class="l-drinks-container">
+            <div class="l-drinks-left">    
+              <h3>Hot drinks</h3>
+              <p>All coffee available decaffeinated.</p>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Espresso</div>
+                <div>1.70</div>
               </div>
+                <div class="c-menu__item c-menu__drink-item">
+                <div>Double Espresso</div>
+                <div>2.30</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Americano</div>
+                <div>2.10</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Macchiato</div>
+                <div>2.30</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Cappucino</div>
+                <div>2.50</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Cortardo</div>
+                <div>2.30</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Flat White</div>
+                <div>3.00</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Iced coffee</div>
+                <div>2.50</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Mocha (milk / white chocolate)</div>
+                <div>2.85</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Chai Latte</div>
+                <div>2.50</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Latte</div>
+                <div>2.50</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Baby Chino</div>
+                <div>1.80</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Extra shot of Espresso</div>
+                <div>65p</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Shot of Syrup</div>
+                <div>65p</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Milk - hot or cold</div>
+                <div>65p</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Hot Chocolate</div>
+                <div>2.70</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Hot Chocolate Deluxe</div>
+                <div>3.00</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Breakfast Tea / Decaff</div>
+                <div>2.00</div>
+              </div>
+              <div class="c-menu__item c-menu__drink-item">
+                <div>Herbal Teas</div>
+                <div>2.10</div>
+              </div>
+              <ul class="c-menu__drink-list">
+                <li>Earl Grey</li>
+                <li>Camomile</li>
+                <li>Lemongrass & Ginger</li>
+                <li>Peppermint</li>
+                <li>Green</li>
+                <li>Redbush</li>
+                <li>Red Berry & Flower</li>
+              </ul>
             </div>
-            
-
+            <div class="l-drinks-right">
+              <h3>Cold Drinks</h3>
+              <div class="c-menu__item c-menu__drink-item">
+                  <div>Milkshakes</div>
+                  <div>2.60</div>
+                </div>
+                <ul class="c-menu__drink-list">
+                  <li>Chocolate</li>
+                  <li>Banana</li>
+                  <li>Raspberry</li>
+                  <li>Vanilla</li>
+                  <li>Strawberry</li>
+                </ul>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Signature Deluxe Shakes</div>
+                  <div>3.70</div>
+                </div>
+                <ul class="c-menu__drink-list">
+                  <li>Oreo</li>
+                  <li>Nutella</li>
+                  <li>Kit Kat</li>
+                </ul>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Smoothies</div>
+                  <div>3.15</div>
+                </div>
+                <p>Please see board for flavours</p>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Belvoir Presse</div>
+                  <div>2.45</div>
+                </div>
+                <p>Please see board for flavours</p>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Cans from the fridge</div>
+                  <div>1.55</div>
+                </div>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Ice Tea</div>
+                  <div>1.85</div>
+                </div>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Sparkling Water</div>
+                  <div>1.45</div>
+                </div>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Mineral Water</div>
+                  <div>1.45</div>
+                </div>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Apple or Orange Juice</div>
+                  <div>1.50</div>
+                </div>
+  
+                <h3>For the Grown-ups</h3>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Bottled Lager 330ml (4.5%)</div>
+                  <div>3.80</div>
+                </div>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>Aspalls Suffolk Cider 500ml (5.5%)</div>
+                  <div>4.20</div>
+                </div>
+                <p>Guest beers - please ask for selection</p>
+  
+                <h3>Small But Perfectly-Formed Wines</h3>
+                <div class="c-menu__item c-menu__drink-item">
+                  <div>187ml bottle</div>
+                  <div>4.20</div>
+                </div>
+                <ul class="c-menu__drink-list">
+                  <li>Pino Grigio (12.5%)</li>
+                  <li>Sauvignon Blanc (12.5%)</li>
+                  <li>Chardonnay (13.5%)</li>
+                  <li>Rose (13%)</li>
+                  <li>Shiraz (14%)</li>
+                  <li>Prosecco - 200ml (11%)</li>
+                </ul>
+            </div>
           </div>
         </div>
-      </main>
+      </div>
+    </div>
+  </main>
     
-      <footer class="c-footer">
-          <div class="c-footer__copyright">Copyright <span class="c-footer__date"></span> Lemon Tree</div>
-          <div class="c-footer__designed-by">Site by <a href="https://www.pjdwebdesign.com">PJD Web Design</a></div>
-      </footer>
+  <footer class="c-footer">
+      <div class="c-footer__copyright">Copyright <span class="c-footer__date"></span> Lemon Tree</div>
+      <div class="c-footer__designed-by">Site by <a href="https://www.pjdwebdesign.com">PJD Web Design</a></div>
+  </footer>
   </div>
   
 
