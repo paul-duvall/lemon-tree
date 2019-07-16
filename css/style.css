@@ -194,8 +194,8 @@ iframe {
     margin-top: 3rem; }
 
 .c-opening {
-  background: linear-gradient(rgba(202, 223, 158, 0.4), rgba(202, 223, 158, 0.4)), url(../../images/interior-2.jpg);
-  background-position: center bottom;
+  background: linear-gradient(rgba(202, 223, 158, 0.4), rgba(202, 223, 158, 0.4)), url(../../images/wall.jpg);
+  background-position: center;
   background-size: cover;
   color: white; }
   .c-opening__times {
@@ -370,7 +370,7 @@ header {
   justify-content: center;
   min-height: 25rem; }
   .c-header__right--home {
-    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/interior-3.JPG);
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/header-home.jpg);
     background-size: cover;
     background-position: center; }
   .c-header__right--contact {
