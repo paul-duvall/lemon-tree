@@ -153,10 +153,12 @@
 }
 
 .c-menu__drink-item {
-  display: flex;
-  justify-content: space-between;
+  // Needed if prices are added back in:
+  // display: flex;
+  // justify-content: space-between;
   
   div {
+    text-align: center;
     font-size: $font-regular-plus;
     font-family: 'Open Sans', sans-serif;
   }

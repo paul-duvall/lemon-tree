@@ -389,7 +389,7 @@ header {
     background-size: cover;
     background-position: center; }
   .c-header__right--gallery {
-    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/image-gallery/afternoon-tea-2.jpg);
+    background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/coffees.jpg);
     background-position: bottom center; }
   .c-header__right--menu {
     background: linear-gradient(rgba(149, 192, 59, 0.6), rgba(149, 192, 59, 0.6)), url(../../images/image-gallery/cake-and-tea.jpg);
@@ -547,12 +547,10 @@ header {
     text-align: center;
     margin-top: -3rem; }
 
-.c-menu__drink-item {
-  display: flex;
-  justify-content: space-between; }
-  .c-menu__drink-item div {
-    font-size: 1.8rem;
-    font-family: 'Open Sans', sans-serif; }
+.c-menu__drink-item div {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Open Sans', sans-serif; }
 
 .c-menu__drink-list {
   display: flex;
