@@ -249,13 +249,13 @@ function addExtras(){
       section.innerHTML += `
         <div class="c-menu__item">  
           <div class="c-menu__item-name">${menuItem.name}</div>
-          <p class="c-menu__item-price">${menuItem.price}</p>
         </div>
       `;
     });  
   });
 }
-
+// To add price to above:
+// <p class="c-menu__item-price">${menuItem.price}</p>
 
 // Generate breakfasts
 function generateBreakfasts() {
@@ -263,13 +263,14 @@ function generateBreakfasts() {
     breakfast.innerHTML += `
       <div class="c-menu__item">
         <div class="c-menu__item-name">${menuItem.name}</div>
-        <p class="c-menu__item-price">${menuItem.price}</p>
         <p>${menuItem.description}</p>
       </div>
     `;
   });
   addExtras();
 }
+// To add price to above:
+// <p class="c-menu__item-price">${menuItem.price}</p>
 
 
 // Generate main meals
@@ -278,12 +279,13 @@ function generateMains() {
     mains.innerHTML += `
       <div class="c-menu__item">
         <div class="c-menu__item-name">${menuItem.name}</div>
-        <p class="c-menu__item-price">${menuItem.price}</p>
         <p>${menuItem.description}</p>
       </div>
     `;
   });
 }
+// To add price to above:
+// <p class="c-menu__item-price">${menuItem.price}</p>
 
 
 // Generate sandwiches
@@ -294,15 +296,16 @@ function generateSandwiches() {
         <div class="c-menu__item-name c-menu__sandwiches-name">
           ${menuItem.name}
         </div>
-        <div class="c-menu__sandwiches-prices">
-          <div>${menuItem.sPrice}</div>
-          <div>${menuItem.wPrice}</div>
-          <div>${menuItem.cPrice}</div>
-        </div>
       </div>
     `;
   });
 }
+// To add price to above:
+// <div class="c-menu__sandwiches-prices">
+//           <div>${menuItem.sPrice}</div>
+//           <div>${menuItem.wPrice}</div>
+//           <div>${menuItem.cPrice}</div>
+//         </div>
 
 
 // Generate nibbles
@@ -313,11 +316,12 @@ function generateNibbles() {
         <div class="c-menu__item-name">
           ${menuItem.name}
         </div>
-        <div>${menuItem.price}</div>
       </div>
     `;
   });
 }
+// To add prices to above:
+// <div>${menuItem.price}</div>
 
 
 // **************************** Menu tabs ****************************
