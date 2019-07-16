@@ -199,8 +199,7 @@ iframe {
   background-size: cover;
   color: white; }
   .c-opening__times {
-    background: rgba(0, 0, 0, 0.25);
-    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.35);
     min-width: 80%;
     margin: 3rem 0;
     padding: 3rem 0; }
@@ -221,12 +220,13 @@ iframe {
   .c-recommendations__section {
     background: white;
     border: 3px solid #006274;
-    width: 27rem;
+    width: 32rem;
     position: relative;
     height: 30rem;
     overflow: hidden; }
     .c-recommendations__section p {
-      padding: 3rem 5rem; }
+      padding: 3rem 5rem;
+      line-height: 1.5; }
   .c-recommendations__image1 {
     width: 35rem;
     position: absolute;
@@ -285,12 +285,12 @@ iframe {
   grid-row-start: 6;
   grid-column-start: 2; }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 750px) {
   .c-recommendations__main {
     grid-template-columns: 5rem auto auto 5rem;
     grid-template-rows: repeat(3, auto); }
   .c-recommendations__section {
-    width: 35rem; }
+    width: 30rem; }
   .c-recommendations__section1 {
     grid-row-start: 1;
     grid-column-start: 2;
@@ -324,12 +324,15 @@ iframe {
   .c-recommendations__main {
     grid-template-columns: 5rem repeat(3, auto) 5rem;
     grid-template-rows: auto auto; }
+  .c-recommendations__section {
+    width: 35rem; }
   .c-recommendations__section1 {
     grid-row-start: 1;
     grid-column-start: 2; }
   .c-recommendations__section2 {
     grid-row-start: 1;
-    grid-column-start: 3; }
+    grid-column-start: 3;
+    padding-top: 3rem; }
   .c-recommendations__section3 {
     grid-row-start: 1;
     grid-column-start: 4;
@@ -337,7 +340,8 @@ iframe {
   .c-recommendations__section4 {
     grid-row-start: 2;
     grid-column-start: 2;
-    border-bottom: 3px solid #006274; }
+    border-bottom: 3px solid #006274;
+    padding-top: 3rem; }
   .c-recommendations__section5 {
     grid-row-start: 2;
     grid-column-start: 3;
@@ -346,7 +350,8 @@ iframe {
   .c-recommendations__section6 {
     grid-row-start: 2;
     grid-column-start: 4;
-    border-left: none; } }
+    border-left: none;
+    padding-top: 3rem; } }
 
 header {
   display: flex;
