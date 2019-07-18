@@ -474,6 +474,11 @@ header {
   background-size: 55rem;
   background-position-y: 40rem; }
 
+.c-menu__title-sandwiches {
+  background: url(../../images/image-gallery/wrap.jpg);
+  background-size: 55rem;
+  background-position-y: 40rem; }
+
 .c-menu__title-nibbles {
   background-image: url(../../images/image-gallery/chocolate-orange-cake.jpg);
   background-position-x: center top; }
