@@ -2,12 +2,12 @@ const breakfastItems = [
   {
     name: 'The Big Lemon Tree Breakfast',
     price: '8.30',
-    description: 'Two rashers of back bacon, three quality butchers chipolatas, poached egg, ramekin of beans, sautéed mushrooms, potatoes, oven-roasted tomatoes and toast.<br><strong>Or 5 items for £5.50!</strong>'   
+    description: 'Two rashers of back bacon, three quality butchers chipolatas, poached egg, ramekin of beans, sautéed mushrooms, potatoes, oven-roasted tomatoes and toast.'   
   },
   {
     name: 'Eggs Anyhow (V)',
     price: '5.70',
-    description: '2 free range eggs fried, poached or scrambled and served on toast. Top with two extra bits of bacon or sausages for <strong>£2.00</strong>'
+    description: '2 free range eggs fried, poached or scrambled and served on toast.'
   },
   {
     name: 'Bacon or Sausage Ciabata',
@@ -47,7 +47,7 @@ const breakfastItems = [
   {
     name: 'Bacon OR Sausage Sandwich',
     price: '4.50',
-    description: '<strong>Add an egg for 90p!</strong>'
+    description: ''
   }
 ];
 
@@ -60,7 +60,7 @@ const mainsItems = [
   {
     name: 'Classic burger',
     price: '9.95',
-    description: 'A 180g homemade beef patty with a base of sweet mustard, chopped gherkins and peppers, topped with mature Cheddar cheese, baby gem lettuce, red onion and tomato. Served in a homemade brioche bun with chips and coleslaw.<br><strong>Add Bacon for £1.00!</strong>'
+    description: 'A 180g homemade beef patty with a base of sweet mustard, chopped gherkins and peppers, topped with mature Cheddar cheese, baby gem lettuce, red onion and tomato. Served in a homemade brioche bun with chips and coleslaw.'
   },
   {
     name: 'The LemonTree Chilli Dog',
@@ -95,7 +95,7 @@ const mainsItems = [
   {
     name: 'Jacket Potato (GF)',
     price: '6.80',
-    description: 'Choose from: Tuna, chicken mayonnaise, homemade chilli, homemade or heinz beans, cheese (cheddar, goats cheese, swiss or brie), prawns in marie rose sauce. Served with dressed salad and homemade coleslaw. (Please note we do not put butter on our potatoes unless requested.)<br><strong>Add an extra topping for £1.00</strong>'
+    description: 'Choose from: Tuna, chicken mayonnaise, homemade chilli, homemade or heinz beans, cheese (cheddar, goats cheese, swiss or brie), prawns in marie rose sauce. Served with dressed salad and homemade coleslaw. (Please note we do not put butter on our potatoes unless requested.)'
   }
 ];
 
