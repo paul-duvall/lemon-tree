@@ -82,9 +82,10 @@ a {
   .c-about__main img {
     max-width: 24rem;
     max-height: 32rem;
-    width: 100%; }
+    width: 100%;
+    padding-bottom: 1.5rem; }
   .c-about__main p {
-    max-width: 65rem;
+    max-width: 90%;
     text-align: left; }
 
 .c-about__quote {
@@ -92,11 +93,11 @@ a {
   border-radius: 3px;
   position: relative;
   width: 100%;
-  max-width: 40rem;
+  max-width: 90%;
   display: inline-block;
-  margin: 5rem; }
+  margin: 4rem; }
   .c-about__quote p {
-    padding: 3rem 6.5rem; }
+    padding: 3rem 3.5rem; }
   .c-about__quote img {
     width: 3rem;
     position: absolute; }

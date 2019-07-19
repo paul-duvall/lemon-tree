@@ -19,10 +19,12 @@
       max-width: 24rem;
       max-height: 32rem;
       width: 100%;
+      padding-bottom: 1.5rem;
     }
 
     p {
-      max-width: 65rem;
+      // max-width: 65rem;
+      max-width: 90%;
       text-align: left;
     }
   }
@@ -33,12 +35,13 @@
     border-radius: 3px;
     position: relative;
     width: 100%;
-    max-width: 40rem;
+    // max-width: 40rem;
+    max-width: 90%;
     display: inline-block;
-    margin: 5rem;
+    margin: 4rem;
 
     p {
-      padding: $size-larger 6.5rem;
+      padding: $size-larger 3.5rem;
     }
 
     // Speech marks
