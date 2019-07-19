@@ -476,8 +476,7 @@ header {
 
 .c-menu__title-sandwiches {
   background: url(../../images/image-gallery/wrap.jpg);
-  background-size: 55rem;
-  background-position-y: 40rem; }
+  background-position: center; }
 
 .c-menu__title-nibbles {
   background-image: url(../../images/image-gallery/chocolate-orange-cake.jpg);
@@ -554,8 +553,7 @@ header {
 
 .c-menu__drink-item div {
   text-align: center;
-  font-size: 1.8rem;
-  font-family: 'Open Sans', sans-serif; }
+  font-size: 1.8rem; }
 
 .c-menu__drink-list {
   display: flex;

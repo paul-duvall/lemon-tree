@@ -48,10 +48,8 @@
 
   &__title-sandwiches {
     background: url(../../images/image-gallery/wrap.jpg);
-    // background-size: 55rem;
-    // background-position-y: 40rem;
-    transform: rotate(90deg);
-    image-position: center;
+    // transform: rotate(90deg);
+    background-position: center;
   }
 
   &__title-nibbles {
@@ -168,7 +166,7 @@
   div {
     text-align: center;
     font-size: $font-regular-plus;
-    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Open Sans', sans-serif;
   }
 }
 
