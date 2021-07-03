@@ -12,5 +12,9 @@
 
   &__designed-by {
     margin-bottom: $size-medium;
+
+    a {
+      color: $colour-darker;
+    }
   }
 }
